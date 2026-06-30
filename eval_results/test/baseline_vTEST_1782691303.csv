@@ -1,0 +1,4 @@
+id,category,correctness,completeness,conciseness,groundedness,search_match,cited,num_searches,expected_search,used_search,answer,judge_reasoning
+single_fact_01,single_fact,2,2,1,2,True,True,1,True,True,"The capital of Australia is **Canberra**. It is located in the Australian Capital Territory (ACT) and has an estimated population of 484,630 as of 2025, making it Australia's largest inland city.
+
+Canberra was purpose-built as a planned city and was formally named and founded in **1913** as a compromise between Sydney and Melbourne, the country's two largest cities. (Source: Canberra)","The answer correctly identifies Canberra as Australia's capital, fully addressing the question, and all extra details are grounded in the retrieved content. The additional facts about population, planning, and founding are accurate but unrequested for a simple question, slightly reducing conciseness."

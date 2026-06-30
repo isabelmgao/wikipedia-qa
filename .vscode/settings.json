@@ -1,0 +1,6 @@
+{
+  // Auto-save when you switch away from VS Code, so the in-memory notebook
+  // stays "clean" and external edits (e.g. from Claude) reload automatically
+  // instead of forcing a manual "Revert File".
+  "files.autoSave": "onFocusChange"
+}

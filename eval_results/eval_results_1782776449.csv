@@ -1,0 +1,151 @@
+id,category,correctness,completeness,conciseness,groundedness,hallucinated,search_match,cited,grounded_chain,num_searches,num_turns,queries,n_search_failures,t_agent_llm,t_wiki,t_judge,expected_search,used_search,error,answer,judge_reasoning
+single_fact_03,single_fact,2.0,2.0,2.0,2.0,False,True,True,,1.0,1.0,Pride and Prejudice novel,0,4.25,0.0,2.81,True,True,,"*Pride and Prejudice* was written by **Jane Austen**, an English author. According to Wikipedia, it was written when she was aged 20–21 and was published in **1813**. It has become one of the most popular novels in English literature, with over 20 million copies sold. (Source: Pride and Prejudice)","The answer correctly identifies Jane Austen and the 1813 publication date, fully supported by the retrieved content along with the additional grounded details about her age and copies sold."
+single_fact_01,single_fact,2.0,2.0,1.0,2.0,False,True,True,,1.0,1.0,capital of Australia,0,4.88,0.01,2.79,True,True,,"The capital of Australia is **Canberra**. It is located within the **Australian Capital Territory (ACT)** in southeastern Australia and has an estimated population of 484,630 as of 2025, making it Australia's largest inland city.
+
+Canberra was formally named and founded as the capital in **1913**, chosen as a compromise between Sydney and Melbourne following the federation of the Australian colonies in 1901. It is notably an entirely planned city, designed by American architects **Walter Burley Griffin and Marion Mahony Griffin**. (Sources: *Canberra*, *Australian Capital Territory*)","The answer correctly states Canberra is the capital, fully supported by retrieved content including population, 1913 founding, and the Griffin design. All facts are grounded; minor extra detail beyond the simple question slightly reduces conciseness."
+single_fact_02,single_fact,2.0,2.0,2.0,2.0,False,True,True,,2.0,2.0,gold chemical element symbol | gold element Au atomic number,0,10.66,0.0,2.9,True,True,,"The chemical symbol for gold is **Au**, which comes from the Latin word *aurum*. Gold has the atomic number 79 and is a transition metal known for being one of the least reactive chemical elements. (Source: Gold – Wikipedia)","The answer correctly states Au from Latin aurum, atomic number 79, transition metal, least reactive — all supported by the retrieved Gold article. Fully addresses the question concisely with proper sourcing."
+multi_hop_01,multi_hop,2.0,2.0,2.0,2.0,False,True,True,,1.0,1.0,Tokyo capital Japan population,0,4.51,0.0,2.84,True,True,,"The capital of Japan is **Tokyo**, which has a total population of **14,195,730** as of 2025. (Source: Demographics of Tokyo)
+
+It is also worth noting that the **Greater Tokyo Area** — which includes Tokyo and several surrounding prefectures — is even larger, with the United Nations estimating its total population at approximately **36,954,512** as of 2026, making it the third most populous metropolitan area in the world. (Source: Greater Tokyo Area)","Both the city proper (14.2M) and greater Tokyo area (~37M) figures match the retrieved content and reference range, with accurate source attribution and no fabrication."
+single_fact_04,single_fact,2.0,2.0,1.0,2.0,False,True,True,,1.0,1.0,bones in adult human body,0,5.45,0.0,2.73,True,True,,"The adult human body typically has **206 bones**. Here are some key details:
+
+- At **birth**, humans have around **270 bones**, but many of these fuse together over time, reducing the count to **206 by adulthood**.
+- The 206 bones are divided into the **axial skeleton (80 bones)** and the **appendicular skeleton (126 bones)**.
+- **172** of the 206 bones are part of a pair, while the remaining **34 are unpaired**.
+- The exact number can vary slightly between individuals due to factors like age and anatomical variation. Additionally, many small accessory bones, such as sesamoid bones, are not included in the standard count.
+
+(Sources: *Human skeleton*, *List of bones of the human skeleton*)","The core answer (206 bones) matches the reference and all supplementary details are fully supported by the retrieved content. The extra detail is accurate and grounded but somewhat beyond the simple question asked, slightly reducing conciseness."
+multi_hop_04,multi_hop,2.0,2.0,2.0,2.0,False,True,True,,2.0,2.0,2016 Summer Olympics host country | official language of Brazil,0,5.81,0.0,2.85,True,True,,"The 2016 Summer Olympics were held in **Brazil** (in Rio de Janeiro). The official language of Brazil is **Portuguese**. It is described as the official and national language of Brazil, spoken by nearly all of its population, making Brazil the most populous Portuguese-speaking country in the world. (Sources: *Football at the 2016 Summer Olympics*, *Languages of Brazil*)","The answer correctly identifies Brazil as host and Portuguese as the official language, both supported by the retrieved content with accurate citations. It is concise and fully addresses the question with no fabricated claims."
+multi_hop_02,multi_hop,2.0,2.0,2.0,2.0,False,True,True,,2.0,1.0,Eiffel Tower height | Statue of Liberty height,0,8.77,0.0,2.97,True,True,,"The **Eiffel Tower** is significantly taller than the Statue of Liberty.
+
+- **Eiffel Tower**: 330 metres (1,083 ft) tall (Source: Eiffel Tower)
+- **Statue of Liberty**: 151 ft tall (the statue itself), standing on a 154 ft pedestal, for a total height of **305 ft** (Source: Replicas of the Statue of Liberty)
+
+The Eiffel Tower, at 1,083 ft, is more than **three times** the total height of the Statue of Liberty (305 ft).","The answer correctly identifies the Eiffel Tower as taller using grounded heights (330 m vs 305 ft total) directly from the retrieved content, fully addressing the comparison concisely with accurate sourcing."
+multi_hop_03,multi_hop,2.0,2.0,2.0,2.0,False,True,True,,3.0,3.0,world's highest mountain | Mount Everest location country | Mount Everest,0,8.3,0.0,2.78,True,True,,"The world's highest mountain is **Mount Everest**, and it is located on the border between **Nepal** and **China** (Tibet Autonomous Region).
+
+According to Wikipedia, Mount Everest ""lies in the Mahalangur Himal sub-range of the Himalayas and marks part of the China–Nepal border at its summit."" Its height was most recently measured in 2020 as **8,848.86 m (29,031 ft)**. (Source: Mount Everest)","The answer correctly identifies Mount Everest on the Nepal-China border, matching the reference, and every claim (border location, 2020 height measurement) is directly supported by the retrieved Mount Everest content."
+ambiguous_03,ambiguous,2.0,1.0,1.0,2.0,False,True,True,,1.0,1.0,jaguar animal,0,7.51,0.0,9.16,True,True,,"A **jaguar** (*Panthera onca*) is a large wild cat and the only living member of the genus *Panthera* native to the Americas. Here are some key facts about it:
+
+- **Appearance:** It has a pale yellow to tan coat covered in spots that transition to rosettes on its sides. Some individuals have a melanistic (all-black) coat.
+- **Size:** It can reach a body length of up to 1.85 m (6 ft 1 in) and weigh up to 158 kg (348 lb), making it the **largest cat in the Americas** and the **third largest in the world**.
+- **Range:** Its habitat extends from the Southwestern United States through Mexico, Central America, the Amazon rainforest, and south to Paraguay and northern Argentina.
+- **Habitat:** It prefers tropical and subtropical moist broadleaf forests, wetlands, and wooded regions. It is also adept at swimming.
+- **Hunting:** It is a solitary, opportunistic, stalk-and-ambush apex predator. Its powerful bite allows it to pierce turtle shells and even bite directly through the skull of prey to deliver a fatal blow to the brain — a highly unusual killing method.
+- **Ecological role:** As a **keystone species**, it plays an important role in stabilizing ecosystems.
+- **Origins:** Its ancestors likely entered the Americas from Eurasia during the Early Pleistocene via a land bridge across the Bering Strait.
+
+(Source: [Jaguar – Wikipedia](https://en.wikipedia.org/wiki/Jaguar))","All facts about the jaguar animal are accurate and fully supported by the retrieved content; however, the reference notes a good answer should mention both senses (the car manufacturer too), which the retrieval didn't include, so completeness is partial. The detailed bullets are a bit more than strictly needed but stay on topic."
+ambiguous_01,ambiguous,2.0,2.0,2.0,2.0,False,True,True,,3.0,2.0,Mercury | Mercury planet | Mercury Roman mythology god,0,14.73,0.0,6.19,True,True,,"""Mercury"" is a term with several major meanings. Here are the most notable ones:
+
+---
+
+### 🪐 1. Mercury (Planet)
+Mercury is the **first planet from the Sun** and the **smallest in the Solar System**. It is a rocky planet with a trace atmosphere and a surface similar to Earth's Moon — cratered, with an expansive rupes system. Its diameter is about **4,880 km (3,030 mi)**. A year on Mercury lasts only **88 Earth days**, and one solar day on Mercury lasts about **176 Earth days**. It always appears close to the Sun in Earth's sky, either as a ""morning star"" or an ""evening star."" (Source: Mercury (planet))
+
+---
+
+### ⚗️ 2. Mercury (Chemical Element)
+Mercury is a **chemical element** with the symbol **Hg** and atomic number **80**, commonly known as **quicksilver**. It is the **only metallic element that is liquid at standard temperature and pressure**. It is toxic to the nervous system, immune system, and kidneys. Mercury is (or has been) used in thermometers, barometers, fluorescent lamps, and other devices. It occurs in deposits mostly as **cinnabar (mercuric sulfide)**. (Source: Mercury (element))
+
+---
+
+### 🏛️ 3. Mercury (Roman Mythology)
+Mercury is a **major god in Roman religion and mythology** and one of the 12 Dii Consentes. He is the god of **boundaries, commerce, communication, luck, travelers, and trickery**, and also serves as the **guide of souls to the underworld**. He is the son of Maia and Jupiter, and is closely associated with the Greek god **Hermes**. He is often depicted holding the **caduceus**. (Source: Mercury (mythology))
+
+---
+
+### 🎤 4. Freddie Mercury (Person)
+**Freddie Mercury** (born Farrokh Bulsara; 1946–1991) was a **British singer and songwriter**, best known as the lead vocalist and pianist of the rock band **Queen**. He is regarded as one of the greatest singers in rock history, known for his **four-octave vocal range** and flamboyant stage persona. He wrote iconic songs such as *""Bohemian Rhapsody""* and *""We Are the Champions.""* (Source: Freddie Mercury)
+
+---
+
+In summary, ""Mercury"" can refer to a planet, a chemical element, a Roman god, or a famous musician, depending on the context! Let me know which one you'd like to explore further. 😊","The answer covers all three main senses (planet, element, god) plus the Freddie Mercury sense, all accurately supported by the retrieved content. Every factual claim traces to the sources and the disambiguation is well-organized and relevant."
+ambiguous_02,ambiguous,2.0,2.0,1.0,2.0,False,True,True,,3.0,1.0,Java island Indonesia | Java programming language | Java coffee,0,17.29,0.0,3.01,True,True,,"""Java"" is a rich and multifaceted term! It can refer to several different things. Here's an overview of the most notable meanings:
+
+---
+
+## 🏝️ 1. Java — The Island (Indonesia)
+
+Java is one of the **Greater Sunda Islands** in Indonesia, located in Southeast Asia. Some key facts:
+
+- **Population:** With about **158 million people** (as of mid-2025), it is the **world's most populous island**, home to approximately 56% of Indonesia's population — yet it makes up only 7% of Indonesia's land area.
+- **Size:** It is the **13th largest island in the world**, covering about 132,644 km².
+- **Capital connection:** Indonesia's capital city, **Jakarta**, is located on Java's northwestern coast.
+- **Geography:** Java was formed by volcanic eruptions due to the geologic subduction of the Australian Plate under the Sunda Plate. A chain of volcanic mountains forms the island's east–west spine.
+- **History:** Java was the center of powerful **Hindu-Buddhist empires**, **Islamic sultanates**, and the **colonial Dutch East Indies**. It was also central to Indonesia's struggle for independence in the 1930s and 1940s.
+- **UNESCO Sites:** Four of Indonesia's eight UNESCO World Heritage Sites are on Java: **Ujung Kulon National Park**, **Borobudur Temple**, **Prambanan Temple**, and the **Sangiran Early Man Site**.
+
+*(Source: Java – Wikipedia)*
+
+---
+
+## 💻 2. Java — The Programming Language
+
+Java is a **high-level, general-purpose, memory-safe, object-oriented programming language**, designed with the philosophy of **""Write Once, Run Anywhere"" (WORA)** — meaning compiled Java code can run on any platform that supports Java without recompilation.
+
+- **Designer:** Created by **James Gosling** at Sun Microsystems, released in **May 1995**.
+- **How it works:** Java programs are compiled to **bytecode** that runs on the **Java Virtual Machine (JVM)**, regardless of the underlying hardware.
+- **Syntax:** Similar to C and C++, but with fewer low-level facilities.
+- **Popularity:** Java was the **third most popular programming language in 2022** according to GitHub, though it has seen a gradual decline in recent years as other JVM-based languages gain traction.
+- **Ownership:** Originally released by Sun Microsystems; **Oracle** later acquired Sun.
+
+*(Source: Java (programming language) – Wikipedia)*
+
+---
+
+## ☕ 3. Java — Coffee
+
+""Java"" is also a well-known informal term for **coffee**, derived from the island of Java in Indonesia, which has a long history of coffee cultivation.
+
+- Coffee cultivation in Indonesia began in the **late 1600s and early 1700s** during the Dutch colonial period.
+- Indonesia was the **fourth-largest producer of coffee in the world** in 2025.
+- Indonesian arabica coffees (including those from Java) are known for their **low acidity and strong body**, making them ideal for blending with higher-acidity coffees.
+
+*(Source: Coffee production in Indonesia – Wikipedia)*
+
+---
+
+In short, ""Java"" most commonly refers to the **Indonesian island**, the **programming language**, or **coffee**. Would you like to dive deeper into any one of these?","The answer covers all three major senses (island, programming language, coffee) accurately, with every factual claim traceable to the retrieved content. It's well-organized but somewhat verbose with extensive detail beyond what a 'tell me about' overview strictly needs."
+unanswerable_01,unanswerable,2.0,2.0,2.0,2.0,False,True,True,,0.0,0.0,,0,3.94,0.0,2.84,False,False,,"I'm sorry, but I'm unable to provide weather forecasts. My tools only allow me to search Wikipedia, which documents factual and encyclopedic information — it does not contain real-time or future weather data.
+
+To get an accurate weather forecast for Tokyo next Friday, I'd recommend checking a reliable weather service such as:
+- **Weather.com** (The Weather Channel)
+- **AccuWeather**
+- **BBC Weather**
+- **Japan Meteorological Agency** (jma.go.jp) — the official source for Japanese weather forecasts
+
+These services will give you up-to-date and location-specific forecasts! 🌤️","The assistant correctly explains it cannot provide weather forecasts and that Wikipedia lacks such data, matching the reference, while helpfully suggesting reliable alternatives. No fabricated facts or sources."
+unanswerable_03,unanswerable,2.0,2.0,1.0,2.0,False,True,True,,0.0,0.0,,0,4.42,0.0,3.02,False,False,,"I cannot answer that question. The 2032 U.S. presidential election has not yet taken place, and predicting its outcome is beyond what I — or anyone — can reliably do. I only provide factual information grounded in Wikipedia sources, and no such source can tell us the future winner of an election that hasn't happened.
+
+If you're interested in related factual topics I *can* help with, such as:
+- **How U.S. presidential elections work**
+- **Eligibility requirements to run for U.S. president**
+- **Past U.S. presidential election results**
+
+Just ask, and I'll look those up for you!","The answer correctly declines to predict an unknowable future event, matching the reference. It addresses the question fully and asserts no false facts; the offered alternatives add minor unrequested content."
+unanswerable_02,unanswerable,2.0,2.0,2.0,2.0,False,False,True,,1.0,1.0,global internet users statistics,0,9.16,0.0,3.23,False,True,,"The **exact number of people online at this precise moment is impossible to know** — it fluctuates constantly as people connect and disconnect across billions of devices worldwide. No tool or source tracks this in true real time.
+
+However, here's what Wikipedia *does* tell us for context:
+
+- As of **2025**, an estimated **~6 billion people** worldwide use the internet, representing approximately **74% of the global population**. (Source: *Global Internet Usage*)
+- Despite this growth, about **2.2 billion people** remain offline, highlighting persistent digital divides related to economic development, affordability, and infrastructure. (Source: *Global Internet Usage*)
+
+So while we can't pinpoint the exact number online *right now*, it's safe to say that at any given moment, a **significant portion of those ~6 billion users** are likely connected — potentially in the range of billions simultaneously, given time zones and usage patterns. But that is an inference, not a measured fact.","The answer correctly explains the exact live count is unknowable and provides accurate contextual stats grounded in the retrieved Global Internet usage content (6 billion, 74%, 2.2 billion offline). The inference about simultaneous users is clearly flagged as inference, not a fabricated fact."
+missing_detail_01,missing_detail,2.0,2.0,2.0,2.0,False,True,True,,2.0,2.0,Julia Roberts mother | Betty Lou Bredemus Julia Roberts mother,0,9.55,0.0,2.67,True,True,,"I was unable to find any information about the weight of Julia Roberts's mother in the Wikipedia articles retrieved. This specific detail — the body weight of Betty Lou Bredemus (Julia Roberts's mother) — does not appear in any of the sourced Wikipedia content, and I will not fabricate or guess a figure.
+
+If you're looking for this information, it is not something Wikipedia covers, and it may not be publicly documented anywhere. I'd recommend checking other sources, though such personal details are rarely made public.","The answer correctly explains the detail isn't in Wikipedia and refuses to fabricate a number, matching the reference behavior; it asserts no unsupported facts and stays focused."
+missing_detail_02,missing_detail,2.0,2.0,2.0,2.0,False,True,True,,2.0,2.0,Albert Einstein personal life | Albert Einstein biography physical appearance,0,5.71,2.49,3.04,True,True,,"Albert Einstein's **shoe size is not documented on Wikipedia**, and I was unable to find any reliable information about it in the retrieved sources. This level of personal physical detail does not appear to be recorded in available encyclopedic sources.
+
+If you're curious about a different aspect of Albert Einstein's life or work, I'd be happy to help!","The answer correctly states the shoe size isn't documented, matching the reference's expected behavior, and asserts no fabricated facts. It's concise and grounded with a clean refusal."
+missing_detail_03,missing_detail,2.0,2.0,2.0,2.0,False,True,True,,2.0,2.0,Leonardo da Vinci childhood early life | Leonardo da Vinci pet animal biography,0,7.63,1.22,2.95,True,True,,"Based on my searches of Wikipedia, there is **no record** of Leonardo da Vinci having a childhood pet or any pet by a specific name. The Wikipedia article on the *Personal life of Leonardo da Vinci* notes that while he left thousands of pages of writings and drawings, he ""rarely made any references to his personal life,"" and no mention of a childhood pet appears in the retrieved sources.
+
+This may be a piece of folklore or a false premise. I'm unable to confirm or provide a name, as doing so would risk fabricating a fact not supported by any sourced information.","The answer correctly states no childhood pet is documented, matching the reference, and grounds its claims in the retrieved content with a direct quote. It refuses to invent a name and stays focused, asserting no fabricated facts."
+false_premise_01,false_premise,2.0,2.0,2.0,2.0,False,True,True,,1.0,1.0,Albert Einstein Nobel Prize,0,4.87,0.0,2.82,True,True,,"Albert Einstein actually won **only one Nobel Prize**, not two. He was awarded the **Nobel Prize in Physics for the year 1921**, though it was actually presented to him in **1922**. The prize was given ""for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect."" (Source: List of awards and honors received by Albert Einstein)
+
+So the premise of your question contains a slight inaccuracy — Einstein received just one Nobel Prize during his lifetime.","The answer correctly corrects the false premise, noting Einstein won only one Nobel Prize (1921 Physics, awarded 1922) for the photoelectric effect, all supported by the retrieved content. It is concise, complete, and fully grounded with no fabrication."
+no_search_01,no_search_needed,,,,,,,,,,,,0,,,,False,,"BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHVNFPzauJmwe9CiDQ'}","[ERROR: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHVNFPzauJmwe9CiDQ'}]",
+no_search_02,no_search_needed,,,,,,,,,,,,0,,,,False,,"BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHW79TXy7gBUrRHfCM'}","[ERROR: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHW79TXy7gBUrRHfCM'}]",
+no_search_03,no_search_needed,,,,,,,,,,,,0,,,,False,,"BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHWk6cTqhkzGHLkgLy'}","[ERROR: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHWk6cTqhkzGHLkgLy'}]",
+false_premise_03,false_premise,,,,,,,,,,,,0,,,,True,,"BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHX4hMSB4PPLKPtLY7'}","[ERROR: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHX4hMSB4PPLKPtLY7'}]",
+false_premise_02,false_premise,,,,,,,,,,,,0,,,,True,,"BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHturFt26CR1cwR5oT'}","[ERROR: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CcYSHturFt26CR1cwR5oT'}]",

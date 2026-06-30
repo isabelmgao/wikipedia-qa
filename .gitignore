@@ -1,0 +1,11 @@
+# Secrets — never commit your API key
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Eval results ARE tracked — they're the record of how the system improved across SI versions.
+# (Nothing ignored here on purpose.)

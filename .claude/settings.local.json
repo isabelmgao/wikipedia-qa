@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/python -m pip install --quiet --upgrade pip ipykernel)",
+      "Bash(.venv/bin/python -c \"import ipykernel; print\\('ipykernel', ipykernel.__version__\\)\")",
+      "Bash(.venv/bin/python -m ipykernel install --user --name anthropic-venv --display-name \"Python \\(.venv anthropic\\)\")",
+      "Bash(.venv/bin/jupyter kernelspec *)",
+      "Bash(.venv/bin/python -m jupyter kernelspec list)",
+      "Read(//opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/bin/**)",
+      "Bash(/Users/izgao/anthropic/.venv/bin/python -c \"import ipykernel; print\\('ok', ipykernel.__version__\\)\")",
+      "Bash(command -v code)",
+      "Bash(code --list-extensions)",
+      "Read(//Users/izgao/.vscode/extensions/**)",
+      "Read(//Users/izgao/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-darwin-arm64/**)",
+      "Bash(cat .obsolete)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import json;print\\(json.load\\(open\\('ms-toolsai.jupyter-2025.9.1-darwin-arm64/package.json'\\)\\)['main']\\)\")",
+      "Bash(mkdir -p /Users/izgao/anthropic/.vscode)",
+      "Bash(cat \"/Users/izgao/Library/Application Support/Code/User/keybindings.json\" 2>/dev/null || echo \"NO_EXISTING_FILE\")",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(.venv/bin/python -m pip install --quiet anthropic requests python-dotenv)",
+      "Bash(.venv/bin/python -c \"import anthropic, requests, dotenv; print\\('anthropic', anthropic.__version__\\); print\\('requests', requests.__version__\\)\")",
+      "Bash(.venv/bin/python \"/private/tmp/claude-501/-Users-izgao-anthropic/1f858841-3f2d-4809-998e-a30b2a3d36e7/scratchpad/wiki_test.py\")",
+      "Bash(.venv/bin/python /Users/izgao/anthropic/eval_data.py)",
+      "Bash(.venv/bin/python \"/private/tmp/claude-501/-Users-izgao-anthropic/1f858841-3f2d-4809-998e-a30b2a3d36e7/scratchpad/smoke_test.py\")",
+      "Bash(.venv/bin/python -m pip install --quiet pandas)",
+      "Bash(.venv/bin/python -c \"import pandas; print\\('pandas', pandas.__version__\\)\")",
+      "Bash(.venv/bin/python \"/private/tmp/claude-501/-Users-izgao-anthropic/1f858841-3f2d-4809-998e-a30b2a3d36e7/scratchpad/harness_test.py\")",
+      "Bash(.venv/bin/python \"/private/tmp/claude-501/-Users-izgao-anthropic/1f858841-3f2d-4809-998e-a30b2a3d36e7/scratchpad/build_notebook.py\")",
+      "Bash(.venv/bin/python -c \"import json; nb=json.load\\(open\\('/Users/izgao/anthropic/notebook.ipynb'\\)\\); print\\('valid notebook,', len\\(nb['cells']\\), 'cells:', [c['id'] for c in nb['cells']]\\)\")",
+      "Bash(.venv/bin/python -)",
+      "Bash(cd /Users/izgao/anthropic *)",
+      "Bash(.venv/bin/pip freeze *)",
+      "Bash(brew --version)",
+      "Bash(.venv/bin/python -c ' *)"
+    ]
+  }
+}

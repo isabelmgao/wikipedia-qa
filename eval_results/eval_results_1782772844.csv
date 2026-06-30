@@ -1,0 +1,174 @@
+id,category,correctness,completeness,conciseness,groundedness,search_match,cited,num_searches,num_turns,queries,n_search_failures,t_agent_llm,t_wiki,t_judge,expected_search,used_search,error,answer,judge_reasoning
+single_fact_03,single_fact,2,2,2,2,True,True,1,1,Pride and Prejudice novel,0,4.79,4.46,2.29,True,True,,"**Pride and Prejudice** was written by the English author **Jane Austen**. Written when she was around 20–21 years old, it was published in **1813** and became one of the most beloved novels in English literature, with over 20 million copies sold. The story follows Elizabeth Bennet and explores themes of love, marriage, and social manners. (Source: Pride and Prejudice)","Correctly identifies Jane Austen as the author, fully answering the question; all stated facts (1813, age 20-21, 20 million copies, Elizabeth Bennet) are supported by the retrieved content."
+single_fact_01,single_fact,2,2,1,2,True,True,1,1,capital of Australia,0,4.68,3.91,3.49,True,True,,"The capital of Australia is **Canberra**. It is located within the Australian Capital Territory (ACT) in southeastern Australia. Canberra was purpose-built as a planned city, founded in 1913 as a compromise between Sydney and Melbourne, and serves as the seat of the national government, housing institutions such as the Parliament of Australia and the High Court of Australia. As of 2025, it has an estimated population of 484,630, making it Australia's largest inland city. (Source: Canberra, Australian Capital Territory)","The answer correctly identifies Canberra and all additional facts (ACT location, founded 1913, planned city, compromise, institutions, 2025 population) are supported by retrieved content. Some extra detail beyond the simple question slightly reduces conciseness."
+single_fact_02,single_fact,2,2,2,2,True,True,2,2,gold chemical element symbol | gold element Au atomic number,0,5.22,5.68,2.23,True,True,,"The chemical symbol for gold is **Au**, which comes from the Latin word *aurum*, meaning gold. Gold has the atomic number 79 on the periodic table. (Source: Gold)","The answer correctly states the symbol Au, the Latin origin aurum, and atomic number 79, all supported by the retrieved Gold article. It is concise and fully grounded."
+single_fact_04,single_fact,2,2,2,2,True,True,1,1,bones in adult human body,0,5.73,1.19,2.78,True,True,,"The adult human body typically has **206 bones**. This number decreases from around **270 bones at birth**, as many bones fuse together during childhood and adolescence.
+
+The 206 bones are divided into:
+- **Axial skeleton** – 80 bones (skull, spinal column, rib cage, and associated bones)
+- **Appendicular skeleton** – 126 bones (shoulder girdle, pelvic girdle, and the limbs)
+
+It's worth noting that the exact number can vary slightly from person to person due to factors like age and anatomical variation. Small accessory bones, such as sesamoid bones, are also not always included in the standard count.
+
+(Source: Human skeleton, List of bones of the human skeleton)","The answer correctly states 206 bones with the 270-at-birth detail, axial/appendicular breakdown, and variation caveats — all supported by the retrieved content. It is well-organized and every claim is grounded."
+multi_hop_01,multi_hop,2,2,2,2,True,True,1,1,Tokyo capital Japan population,0,5.56,1.86,3.39,True,True,,"The capital of Japan is **Tokyo**, and as of 2025, its total population is **14,195,730** (approximately 14.2 million people), accounting for about 11.5% of Japan's total population. (Source: Demographics of Tokyo)
+
+If you include the broader **Greater Tokyo Area** (which encompasses surrounding prefectures), the population rises to an estimated **36,954,512** as of 2026, making it the third most populous metropolitan area in the world. (Source: Greater Tokyo Area)","The answer correctly identifies Tokyo and provides both city proper (~14.2M) and Greater Tokyo Area (~37M) figures, all directly supported by the retrieved content. It is focused and well-grounded with source attribution."
+multi_hop_02,multi_hop,2,2,2,2,True,True,2,1,Eiffel Tower height | Statue of Liberty height,0,5.76,4.18,2.52,True,True,,"The **Eiffel Tower** is significantly taller than the Statue of Liberty.
+
+- **Eiffel Tower**: 330 metres (1,083 ft) tall (Source: Eiffel Tower)
+- **Statue of Liberty**: 151 ft (statue alone) / 305 ft including its pedestal (Source: Replicas of the Statue of Liberty)
+
+Even when including the Statue of Liberty's pedestal, the Eiffel Tower is still more than **three times taller**.","The answer correctly identifies the Eiffel Tower as taller, with figures (330 m vs 151 ft statue / 305 ft total) all sourced from retrieved content. It fully addresses the question concisely and grounds every claim in the sources."
+multi_hop_04,multi_hop,2,2,2,2,True,True,2,2,2016 Summer Olympics host country | official language of Brazil,0,6.07,4.59,2.65,True,True,,"The **2016 Summer Olympics** were hosted by **Brazil** (in Rio de Janeiro), and the official language of Brazil is **Portuguese**. Brazil is, in fact, the most populous Portuguese-speaking country in the world. (Sources: Football at the 2016 Summer Olympics, Languages of Brazil)","The answer correctly identifies Brazil as host and Portuguese as the official language, both supported by retrieved content. It is concise, complete, and fully grounded with citations."
+multi_hop_03,multi_hop,2,2,2,2,True,True,3,3,world's highest mountain | Mount Everest location country | Mount Everest,0,8.67,3.73,3.05,True,True,,"The world's highest mountain is **Mount Everest**, and it is located on the border between **Nepal** and **China** (Tibet). Its summit marks the boundary between the two countries.
+
+Mount Everest stands at **8,848.86 m (29,031 ft)** above sea level, as measured in a 2020 joint survey by Nepalese and Chinese authorities. It lies in the Mahalangur Himal sub-range of the Himalayas. (Source: Mount Everest)","The answer correctly identifies Mount Everest on the Nepal-China border, matching the reference, and all facts (height, 2020 survey, Mahalangur Himal) are supported by the retrieved Mount Everest article. It is focused and fully addresses the question."
+ambiguous_03,ambiguous,2,1,1,2,True,True,1,1,jaguar animal,0,7.91,1.21,4.04,True,True,,"A **jaguar** (*Panthera onca*) is a **large wild cat** and the only living member of the genus *Panthera* native to the Americas. Here are the key highlights:
+
+- **Appearance:** It has a pale yellow to tan coat covered in spots that transition to rosette patterns on its sides. Some individuals have a melanistic (all-black) coat.
+- **Size:** It can reach up to 1.85 m (6 ft 1 in) in body length and weigh up to 158 kg (348 lb), making it the **largest cat in the Americas** and the **third largest in the world**.
+- **Habitat & Range:** Jaguars are found from the southwestern United States through Mexico, Central America, the Amazon rainforest, and as far south as Paraguay and northern Argentina. They prefer tropical and subtropical forests and wetlands.
+- **Behavior:** They are largely **solitary, apex predators** that hunt by stalking and ambushing prey. They are also skilled swimmers — unusual among big cats.
+- **Unique hunting method:** The jaguar has an exceptionally powerful bite, strong enough to pierce turtle shells and even bite directly through the skulls of mammalian prey.
+- **Ecological role:** As a **keystone species**, the jaguar plays a vital role in stabilizing its ecosystem.
+
+(Source: Jaguar, Wikipedia)","All facts about the animal are accurate and grounded in retrieved content. However, the reference notes a good answer should mention both senses (the cat and the British car manufacturer); the answer only covers the animal, missing a main sense. The detailed bullet list goes beyond a basic definition but stays relevant."
+ambiguous_01,ambiguous,2,2,2,2,True,True,3,2,Mercury | Mercury planet | Mercury Roman mythology god,0,18.5,3.22,8.83,True,True,,"""Mercury"" is a term with several major meanings. Here's a breakdown of the most common ones:
+
+---
+
+### 🪐 1. Mercury (Planet)
+Mercury is the **first planet from the Sun** and the **smallest planet in the Solar System**. It is a rocky planet with a trace atmosphere and a heavily cratered surface similar to Earth's Moon. A year on Mercury lasts only **88 Earth days**, and due to its unique spin-orbit resonance, a single solar day on Mercury lasts about **176 Earth days**. It has a faint magnetic field and an extremely thin exosphere. (Source: Mercury (planet))
+
+---
+
+### ⚗️ 2. Mercury (Chemical Element)
+Mercury is a **chemical element** with the symbol **Hg** and atomic number **80**, commonly known as **quicksilver**. It is the **only metallic element that is liquid at standard temperature and pressure**. It is used in thermometers, barometers, and fluorescent lamps, though its use has declined due to its **toxicity** — exposure can damage the nervous system, immune system, and kidneys. (Source: Mercury (element))
+
+---
+
+### 🏛️ 3. Mercury (Roman Mythology)
+Mercury is a **major god in Roman religion**, one of the 12 Dii Consentes. He is the god of **commerce, communication, luck, travelers, and trickery**, and also serves as the **guide of souls to the underworld**. He is the Roman equivalent of the Greek god **Hermes** and is often depicted holding a **caduceus** (a staff with intertwined snakes). (Source: Mercury (mythology))
+
+---
+
+### 🎤 4. Freddie Mercury (Person)
+Freddie Mercury (1946–1991) was a **British rock singer and songwriter**, best known as the lead vocalist of the band **Queen**. He is celebrated for his **four-octave vocal range** and theatrical performances, and wrote iconic songs like *Bohemian Rhapsody* and *We Are the Champions*. (Source: Freddie Mercury)
+
+---
+
+In short, ""Mercury"" can refer to a planet, a chemical element, a Roman god, or a legendary rock musician — which one were you asking about? 😊","All three reference senses (planet, element, god) are covered accurately and grounded in retrieved content, plus a well-supported Freddie Mercury addition. The answer acknowledges ambiguity and every claim is traceable to the sources, with no superfluous content."
+unanswerable_01,unanswerable,2,2,1,2,True,True,0,0,,0,3.55,0.0,3.07,False,False,,"I'm sorry, but I can't help with weather forecasts. My tools only allow me to search Wikipedia, which contains general encyclopedic information — not real-time or future weather data.
+
+For an accurate weather forecast for Tokyo next Friday, I'd recommend checking a reliable weather service such as:
+- **weather.com** (The Weather Channel)
+- **accuweather.com**
+- **forecast.weather.gov** (if applicable)
+- Or simply searching **""Tokyo weather forecast""** in Google or your preferred search engine.
+
+These sources will give you up-to-date and location-specific forecasts! 🌤️","The answer correctly explains it cannot provide weather forecasts and that Wikipedia lacks such data, matching the reference. It fully addresses the question but includes some extra detail (list of weather services) that goes slightly beyond what was needed; no false factual claims."
+unanswerable_03,unanswerable,2,2,1,2,True,True,0,0,,0,3.69,0.0,2.55,False,False,,"I cannot answer that question. The 2032 U.S. presidential election has not happened yet, and predicting its outcome is beyond what I — or anyone — can reliably do. Wikipedia, my source of truth, naturally contains no information about a future election result.
+
+If you're interested, I can help with related topics I *can* look up, such as:
+- **Past U.S. presidential elections** and their results
+- **How the U.S. presidential election process works**
+- **Current U.S. political landscape** (based on what Wikipedia has documented)
+
+Just let me know!","The assistant correctly declines to predict an unknowable future event, fully addressing the question. The offer of related topics is mildly superfluous but reasonable; no factual claims need grounding."
+ambiguous_02,ambiguous,2,2,2,2,True,True,3,1,Java programming language | Java island Indonesia | Java coffee,0,19.07,5.24,4.36,True,True,,"Great question! **""Java""** is a term with several notable meanings. Here's an overview of the most prominent ones:
+
+---
+
+## 🏝️ 1. Java — The Island
+Java is one of the **Greater Sunda Islands** in Indonesia, located in Southeast Asia. It is bordered by the **Indian Ocean** to the south and the **Java Sea** to the north. Some key facts:
+- It is the **world's most populous island**, with approximately **158 million people** (as of mid-2025), making up ~56% of Indonesia's total population.
+- Indonesia's capital, **Jakarta**, sits on Java's northwestern coast.
+- It is the **13th largest island in the world**, covering about 132,644 km².
+- Java has been historically significant — it was the center of powerful **Hindu-Buddhist empires**, **Islamic sultanates**, the **Dutch colonial empire**, and the **Indonesian independence movement**.
+- It is home to **4 UNESCO World Heritage Sites**: Ujung Kulon National Park, Borobudur Temple, Prambanan Temple, and the Sangiran Early Man Site.
+
+(Source: Java)
+
+---
+
+## 💻 2. Java — The Programming Language
+Java is a **high-level, general-purpose, object-oriented programming language** designed by **James Gosling** at **Sun Microsystems**, released in **May 1995**. Key highlights:
+- Its motto is **""Write Once, Run Anywhere"" (WORA)** — compiled Java code runs on any platform supporting a **Java Virtual Machine (JVM)**.
+- Its syntax is similar to **C and C++**, but with fewer low-level operations.
+- It was the **3rd most popular programming language on GitHub in 2022**.
+- Java technologies were largely relicensed under the **GPL-2.0** license in 2007.
+- **Oracle** acquired Sun Microsystems and now stewards the language.
+- Note: Despite the similar name, **Java and JavaScript are completely different languages**.
+
+(Source: Java (programming language))
+
+---
+
+## ☕ 3. Java — Coffee
+""Java"" is also a **slang term for coffee**, derived from the island of Java, which has a long history of **coffee cultivation** dating back to the **late 1600s** during the Dutch colonial period. Indonesia remains one of the world's **top coffee producers**, and Java's arabica beans are known for their **low acidity and strong body**, making them ideal for blending.
+
+(Source: Coffee production in Indonesia)
+
+---
+
+Would you like to dive deeper into any one of these topics?","All three major senses (island, programming language, coffee) are covered accurately and supported by the retrieved content, addressing the ambiguity fully. The 'slang term for coffee' framing is reasonable given the coffee production source, and every claim traces to retrieved material. The structured format is well-organized with no padding."
+unanswerable_02,unanswerable,2,2,1,2,True,True,0,0,,0,7.67,0.0,3.25,False,False,,"This is not a question Wikipedia — or any static source — can answer, because the number of people online at any given instant changes moment to moment and would require real-time global network monitoring data to measure precisely.
+
+Here's what we can say in general terms:
+
+- **No source, including Wikipedia, tracks live simultaneous internet users.** This figure fluctuates constantly based on time of day, region, and activity.
+- What *is* tracked are broader statistics, such as the **total number of internet users worldwide** (people who have used the internet in a given period). As of recent estimates, this figure is in the **billions** — over 5 billion people globally have internet access.
+
+For real-time or near-real-time statistics, you'd need to consult specialized tools or platforms such as:
+- **Internet Live Stats** (internetlivestats.com)
+- **Statista**
+- **ITU (International Telecommunication Union)** reports
+
+These sources attempt to model live usage, though even they are estimates based on traffic data and usage patterns rather than exact counts.
+
+So in short: **we don't know exactly**, and neither does anyone else — but it's likely **hundreds of millions to over a billion people** at any given moment, depending on the time of day globally.","Correctly explains the live count can't be answered and provides appropriate general context; sourcing not required so general knowledge is fine. Slightly verbose with extra tool recommendations and estimates, but stays on topic."
+missing_detail_02,missing_detail,2,2,2,1,True,False,1,1,Albert Einstein personal life details,0,5.14,1.2,2.57,True,True,,"Albert Einstein's shoe size is **not documented** in Wikipedia or, as far as can be determined, in any widely available historical record. This is a very obscure personal detail that was simply never prominently recorded or preserved.
+
+If you're curious about Einstein's life and characteristics, Wikipedia's article on **Albert Einstein** covers his biography, scientific work, and personal life in considerable detail — but shoe size isn't among the facts noted there.","The answer correctly states the shoe size isn't documented, matching the reference behavior. However, the claim 'as far as can be determined, in any widely available historical record' extends beyond the retrieved content, a minor ungrounded embellishment."
+missing_detail_01,missing_detail,2,2,2,2,True,True,2,2,Julia Roberts mother | Betty Lou Bredemus Julia Roberts mother,0,7.75,5.31,2.82,True,True,,"I was not able to find any information about the weight of Julia Roberts's mother, Betty Lou Bredemus, in the Wikipedia articles retrieved. This level of personal detail — the body weight of a celebrity's parent — is not something Wikipedia covers, and I would not want to guess or fabricate a number.
+
+If you're looking for this information, you might try other sources, but be cautious, as such details are rarely publicly documented.","The answer correctly explains the weight isn't available in Wikipedia and refuses to fabricate, matching the reference behavior. It even correctly names the mother (Betty Lou Bredemus) which was implied in the search query, and asserts no unsupported facts."
+missing_detail_03,missing_detail,2,2,2,2,True,True,2,2,Leonardo da Vinci childhood early life | Leonardo da Vinci pet animal childhood,0,7.26,4.73,3.06,True,True,,"Based on my searches of Wikipedia, there is **no record** of Leonardo da Vinci having a named childhood pet. Wikipedia's article on the *Personal Life of Leonardo da Vinci* notes that he left thousands of pages of writings and drawings but **rarely made references to his personal life**, leaving much of it uncertain or subject to speculation.
+
+If you've encountered a specific claim about a childhood pet somewhere, it may be a myth, a misattribution, or simply unverified. I'm unable to confirm it based on Wikipedia's sources.","The answer correctly states no childhood pet is documented, matching the reference's expected behavior, and grounds its claim in the retrieved Personal Life article without inventing facts. It is focused and addresses the question fully."
+false_premise_01,false_premise,2,2,2,2,True,True,1,1,Albert Einstein Nobel Prize,0,4.79,1.7,2.63,True,True,,"Albert Einstein actually won only **one Nobel Prize**, not two. He was awarded the **Nobel Prize in Physics for the year 1921**, though it was actually presented to him in **1922**. The prize was given *""for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.""*
+
+Notably, he did **not** receive a Nobel Prize for his famous theory of relativity. (Source: List of awards and honors received by Albert Einstein)","The answer correctly corrects the false premise, stating Einstein won only one Nobel Prize (1921 Physics, presented 1922) for the photoelectric effect, all supported by retrieved content. It is concise and fully grounded."
+no_search_01,no_search_needed,2,2,1,2,True,True,0,0,,0,1.86,0.0,2.85,False,False,,"17 multiplied by 23 is **391**.
+
+This is a straightforward arithmetic calculation (17 × 23 = 391) and does not require a Wikipedia source.","The answer correctly states 391, fully addressing the question. The note about not needing a Wikipedia source is unnecessary, slightly reducing conciseness; groundedness is fine as no sourcing was required."
+no_search_02,no_search_needed,2,2,2,2,True,False,0,0,,0,1.78,0.0,2.32,False,False,,"Here is a haiku about rain:
+
+Soft drops kiss the earth,
+Clouds weep their silver secrets,
+Puddles hold the sky.","The haiku follows the 5-7-5 structure and is an appropriate original creative response about rain. No sourcing was needed, and the answer is focused and complete."
+false_premise_02,false_premise,1,2,1,0,True,True,2,2,Great Wall of China visible from space | Great Wall of China visible from space myth naked eye,0,11.94,2.5,3.77,True,True,,"The premise of your question is actually a **myth** — the Great Wall of China is **not** visible from space with the naked eye. This is one of the most widespread geographical misconceptions.
+
+According to Wikipedia's article on the **Great Wall of China**:
+
+> *""The claim that the Great Wall is visible from space with the naked eye is a popular myth that has been debunked... The wall is only about 4.5 to 9 metres (15 to 30 ft) wide — too narrow to be seen from orbit without aid.""*
+
+And the article on **Artificial structures visible from space** confirms that while some large-scale structures like highways, dams, and cities can be seen from low Earth orbit (e.g., the ISS at ~420 km altitude), visibility depends heavily on **width**, not just length. The Great Wall is extraordinarily long (~21,196 km), but it is far too **narrow** to resolve with the unaided human eye from space.
+
+Several astronauts have specifically addressed this:
+- Chinese astronaut **Yang Liwei**, after his 2003 spaceflight, confirmed he could **not** see it.
+- NASA astronaut **Ed Lu** noted that while he could occasionally spot it with the aid of a camera using a zoom lens under ideal lighting conditions, it was **not** visible to the naked eye.
+
+So in short: the Great Wall cannot be seen from space with the naked eye. It's an enduring myth, likely fueled by the Wall's legendary length — but **width**, not length, is what determines naked-eye visibility from orbit. (Sources: Great Wall of China, Artificial structures visible from space)","The answer correctly debunks the myth, matching the reference's core point. However, it fabricates a direct quote attributed to the Great Wall Wikipedia article and invents specific details (4.5-9m width, Yang Liwei, Ed Lu) that do not appear in the retrieved content, which is a serious grounding violation."
+no_search_03,no_search_needed,2,2,1,2,True,False,0,0,,0,2.93,0.0,2.35,False,False,,"This is a language translation request, not a factual question requiring a Wikipedia lookup — no search needed here!
+
+""Good morning"" in Spanish is **""Buenos días""**.
+
+- **Buenos** = Good
+- **Días** = Days/Morning
+
+It is the standard greeting used in the Spanish-speaking world during the morning hours. 🌞",The translation 'Buenos días' is correct and fully answers the question. Some extra word-by-word breakdown and commentary is unrequested but harmless; no grounding needed for a translation task.
+false_premise_03,false_premise,1,2,2,0,True,True,2,2,Thomas Edison light bulb invention | Edison incandescent light bulb 1879 patent,0,10.04,2.66,3.74,True,True,,"Thomas Edison developed his first successful incandescent light bulb in **1879**. According to Wikipedia, Edison began working on an electrical lighting system in **1878**, hoping to replace common gas lamps, and achieved his breakthrough with a practical, long-lasting bulb in **October 1879**. He was awarded a patent for it on **January 27, 1880**.
+
+It's worth noting that Edison is credited with creating the first *practical* and commercially viable incandescent light bulb, though other inventors (such as Joseph Swan in Britain) were working on similar designs around the same time. (Source: Thomas Edison)","The answer correctly addresses the premise issue (mentions practical bulb, Swan), aligning with the reference, but the retrieved content only supports 1878 as when Edison began working; the specific facts of 1879 breakthrough, January 27 1880 patent, and Joseph Swan are not in the retrieved content and were drawn from memory, constituting grounding violations."

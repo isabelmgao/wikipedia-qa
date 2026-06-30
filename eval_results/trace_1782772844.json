@@ -1,0 +1,936 @@
+[
+  {
+    "id": "single_fact_03",
+    "category": "single_fact",
+    "question": "Who wrote the novel 'Pride and Prejudice'?",
+    "expected_search": true,
+    "reference": "Jane Austen wrote Pride and Prejudice (published 1813).",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "Pride and Prejudice novel"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Pride and Prejudice novel",
+        "status": "ok",
+        "result": "## Pride and Prejudice\nhttps://en.wikipedia.org/wiki/Pride_and_Prejudice\n\nPride and Prejudice is a novel by English author Jane Austen. Written when she was aged 20–21, it was her third novel scribed and became the second to see print when it was published in 1813. A novel of manners, it follows the character development of Elizabeth Bennet, the protagonist of the book, who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.\nHer father, Mr Bennet—owner of the Longbourn estate in Hertfordshire—has five daught…[+3133 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "**Pride and Prejudice** was written by the English author **Jane Austen**. Written when she was around 20–21 years old, it was published in **1813** and became one of the most beloved novels in English literature, with over 20 million copies sold. The story follows Elizabeth Bennet and explores themes of love, marriage, and social manners. (Source: Pride and Prejudice)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "Correctly identifies Jane Austen as the author, fully answering the question; all stated facts (1813, age 20-21, 20 million copies, Elizabeth Bennet) are supported by the retrieved content."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 9.25,
+      "agent_llm": 4.79,
+      "wiki": 4.46,
+      "judge": 2.29
+    },
+    "error": null
+  },
+  {
+    "id": "single_fact_01",
+    "category": "single_fact",
+    "question": "What is the capital of Australia?",
+    "expected_search": true,
+    "reference": "Canberra is the capital of Australia.",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "capital of Australia"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "capital of Australia",
+        "status": "ok",
+        "result": "## Australian Capital Territory\nhttps://en.wikipedia.org/wiki/Australian_Capital_Territory\n\nThe Australian Capital Territory (ACT), known as the Federal Capital Territory until 1938, is an internal territory of Australia. Canberra, the capital city of Australia, is situated within the territory, and is the territory's primate city. The Australian Capital Territory is located in southeastern Australia as an enclave surrounded by the state of New South Wales. The territory was excised from New South Wales in 1911 to serve as the seat of government for the Commonwealth, in accordance with Section…[+3707 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The capital of Australia is **Canberra**. It is located within the Australian Capital Territory (ACT) in southeastern Australia. Canberra was purpose-built as a planned city, founded in 1913 as a compromise between Sydney and Melbourne, and serves as the seat of the national government, housing institutions such as the Parliament of Australia and the High Court of Australia. As of 2025, it has an estimated population of 484,630, making it Australia's largest inland city. (Source: Canberra, Australian Capital Territory)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "The answer correctly identifies Canberra and all additional facts (ACT location, founded 1913, planned city, compromise, institutions, 2025 population) are supported by retrieved content. Some extra detail beyond the simple question slightly reduces conciseness."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 8.59,
+      "agent_llm": 4.68,
+      "wiki": 3.91,
+      "judge": 3.49
+    },
+    "error": null
+  },
+  {
+    "id": "single_fact_02",
+    "category": "single_fact",
+    "question": "What is the chemical symbol for gold?",
+    "expected_search": true,
+    "reference": "The chemical symbol for gold is Au.",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 2,
+    "queries": [
+      "gold chemical element symbol",
+      "gold element Au atomic number"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "gold chemical element symbol",
+        "status": "ok",
+        "result": "## Chemical symbol\nhttps://en.wikipedia.org/wiki/Chemical_symbol\n\nChemical symbols are the abbreviations used in chemistry, mainly for chemical elements, but also for functional groups, chemical compounds, and other entities. Element symbols for chemical elements, also known as atomic symbols, normally consist of one or two letters from the Latin alphabet and are written with the first letter capitalised.\n\n---\n\n## Alchemical symbol\nhttps://en.wikipedia.org/wiki/Alchemical_symbol\n\nAlchemical symbols were used to denote chemical elements and compounds, as well as alchemical apparatus and process…[+1395 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "gold element Au atomic number",
+        "status": "ok",
+        "result": "## Gold\nhttps://en.wikipedia.org/wiki/Gold\n\nGold is a chemical element; its chemical symbol is Au (from Latin aurum) and atomic number 79. In its pure form, it is a bright-metallic-yellow, dense, soft, malleable, and ductile metal. Chemically, gold is a transition metal, a group 11 element, and one of the noble metals. It is one of the least reactive chemical elements, being the second lowest in the reactivity series, with only platinum ranked as less reactive. Gold is solid under standard conditions.\nGold often occurs as the free element (native state), as nuggets or grains, in rocks, veins, …[+3569 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The chemical symbol for gold is **Au**, which comes from the Latin word *aurum*, meaning gold. Gold has the atomic number 79 on the periodic table. (Source: Gold)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly states the symbol Au, the Latin origin aurum, and atomic number 79, all supported by the retrieved Gold article. It is concise and fully grounded."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 10.9,
+      "agent_llm": 5.22,
+      "wiki": 5.68,
+      "judge": 2.23
+    },
+    "error": null
+  },
+  {
+    "id": "single_fact_04",
+    "category": "single_fact",
+    "question": "How many bones are in the adult human body?",
+    "expected_search": true,
+    "reference": "An adult human body has 206 bones.",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "bones in adult human body"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "bones in adult human body",
+        "status": "ok",
+        "result": "## List of bones of the human skeleton\nhttps://en.wikipedia.org/wiki/List_of_bones_of_the_human_skeleton\n\nAn adult human skeleton is commonly quoted as consisting of 206 bones. Reports on the typical number of bones have varied historically depending on how different sources choose to count features such as fused bones (for example, the sternum). The actual number of bones in any individual skeleton varies depending on factors such as age and anatomical variation. \nThe list of 206 bones in the adult skeleton can be subdivided into the axial skeleton (80 bones) and the appendicular skeleton (12…[+2367 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The adult human body typically has **206 bones**. This number decreases from around **270 bones at birth**, as many bones fuse together during childhood and adolescence.\n\nThe 206 bones are divided into:\n- **Axial skeleton** – 80 bones (skull, spinal column, rib cage, and associated bones)\n- **Appendicular skeleton** – 126 bones (shoulder girdle, pelvic girdle, and the limbs)\n\nIt's worth noting that the exact number can vary slightly from person to person due to factors like age and anatomical variation. Small accessory bones, such as sesamoid bones, are also not always included in the standard count.\n\n(Source: Human skeleton, List of bones of the human skeleton)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly states 206 bones with the 270-at-birth detail, axial/appendicular breakdown, and variation caveats — all supported by the retrieved content. It is well-organized and every claim is grounded."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 6.92,
+      "agent_llm": 5.73,
+      "wiki": 1.19,
+      "judge": 2.78
+    },
+    "error": null
+  },
+  {
+    "id": "multi_hop_01",
+    "category": "multi_hop",
+    "question": "What is the population of the capital of Japan?",
+    "expected_search": true,
+    "reference": "Tokyo is the capital of Japan. Its population is roughly 14 million in the city proper, or about 37 million in the greater Tokyo metropolitan area. Accept figures in this range.",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "Tokyo capital Japan population"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Tokyo capital Japan population",
+        "status": "ok",
+        "result": "## Greater Tokyo Area\nhttps://en.wikipedia.org/wiki/Greater_Tokyo_Area\n\nThe Greater Tokyo Area is the third most populous metropolitan area in the world, consisting of the Kantō region of Japan (including Tokyo Metropolis and the prefectures of Chiba, Gunma, Ibaraki, Kanagawa, Saitama, and Tochigi) as well as the prefecture of Yamanashi of the neighboring Chūbu region. In Japanese, it is referred to by various terms, one of the most common being Capital Region (首都圏, Shuto-ken).\nAs of 2026, the United Nations estimates the total population at 36,954,512, making it the third-most populous urban …[+2447 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The capital of Japan is **Tokyo**, and as of 2025, its total population is **14,195,730** (approximately 14.2 million people), accounting for about 11.5% of Japan's total population. (Source: Demographics of Tokyo)\n\nIf you include the broader **Greater Tokyo Area** (which encompasses surrounding prefectures), the population rises to an estimated **36,954,512** as of 2026, making it the third most populous metropolitan area in the world. (Source: Greater Tokyo Area)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly identifies Tokyo and provides both city proper (~14.2M) and Greater Tokyo Area (~37M) figures, all directly supported by the retrieved content. It is focused and well-grounded with source attribution."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 7.42,
+      "agent_llm": 5.56,
+      "wiki": 1.86,
+      "judge": 3.39
+    },
+    "error": null
+  },
+  {
+    "id": "multi_hop_02",
+    "category": "multi_hop",
+    "question": "Which is taller, the Eiffel Tower or the Statue of Liberty?",
+    "expected_search": true,
+    "reference": "The Eiffel Tower (~330 m) is much taller than the Statue of Liberty (~93 m including its pedestal).",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 1,
+    "queries": [
+      "Eiffel Tower height",
+      "Statue of Liberty height"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Eiffel Tower height",
+        "status": "ok",
+        "result": "## Eiffel Tower\nhttps://en.wikipedia.org/wiki/Eiffel_Tower\n\nThe Eiffel Tower (  EYE-fəl; French: Tour Eiffel [tuʁ ɛfɛl] ) is a lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.\nLocally nicknamed \"La dame de fer\" (French for \"Iron Lady\") for its use of wrought iron, it was constructed as the centrepiece of the 1889 World's Fair, and to crown the centennial anniversary of the French Revolution. Although initially criticised by some of France's leading artists and intellectuals for its …[+2011 chars]"
+      },
+      {
+        "turn": 1,
+        "query": "Statue of Liberty height",
+        "status": "ok",
+        "result": "## Replicas of the Statue of Liberty\nhttps://en.wikipedia.org/wiki/Replicas_of_the_Statue_of_Liberty\n\nHundreds of replicas of New York City's Statue of Liberty (Liberty Enlightening the World) have been created worldwide. The original Statue of Liberty, designed by sculptor Frédéric Auguste Bartholdi, is 151 feet tall and stands on a pedestal that is 154 feet tall, making the height of the entire sculpture 305 feet. The design for the original Statue of Liberty began in 1865, with final installation in 1886.\n\n---\n\n## List of tallest statues\nhttps://en.wikipedia.org/wiki/List_of_tallest_statues…[+1874 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The **Eiffel Tower** is significantly taller than the Statue of Liberty.\n\n- **Eiffel Tower**: 330 metres (1,083 ft) tall (Source: Eiffel Tower)\n- **Statue of Liberty**: 151 ft (statue alone) / 305 ft including its pedestal (Source: Replicas of the Statue of Liberty)\n\nEven when including the Statue of Liberty's pedestal, the Eiffel Tower is still more than **three times taller**.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly identifies the Eiffel Tower as taller, with figures (330 m vs 151 ft statue / 305 ft total) all sourced from retrieved content. It fully addresses the question concisely and grounds every claim in the sources."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 9.94,
+      "agent_llm": 5.76,
+      "wiki": 4.18,
+      "judge": 2.52
+    },
+    "error": null
+  },
+  {
+    "id": "multi_hop_04",
+    "category": "multi_hop",
+    "question": "What is the official language of the country that hosted the 2016 Summer Olympics?",
+    "expected_search": true,
+    "reference": "The 2016 Summer Olympics were held in Rio de Janeiro, Brazil. Brazil's official language is Portuguese.",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 2,
+    "queries": [
+      "2016 Summer Olympics host country",
+      "official language of Brazil"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "2016 Summer Olympics host country",
+        "status": "ok",
+        "result": "## Football at the 2016 Summer Olympics\nhttps://en.wikipedia.org/wiki/Football_at_the_2016_Summer_Olympics\n\nThe association football tournament at the 2016 Summer Olympics was held from 3 to 20 August in Brazil.\nIn addition to the Olympic host city of Rio de Janeiro, matches were played in Belo Horizonte, Brasília, Salvador, São Paulo, and Manaus. All six cities hosted matches during the 2014 World Cup, with the Estádio Olímpico João Havelange in Rio de Janeiro the only Olympic venue not to have been a World Cup venue.\nAssociations affiliated with FIFA might send teams to participate in the to…[+2199 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "official language of Brazil",
+        "status": "ok",
+        "result": "## Languages of Brazil\nhttps://en.wikipedia.org/wiki/Languages_of_Brazil\n\nPortuguese is the official and national language of Brazil, being widely spoken by nearly all of its population. Brazil is the most populous Portuguese-speaking country in the world, with its lands comprising the majority of Portugal's former colonial holdings in the Americas.\nAside from Portuguese, the country also has numerous minority languages, including over 200 different indigenous languages, such as Nheengatu (a descendant of Tupi), and languages of more recent European and Asian immigrants, such as Italian, Germa…[+3621 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The **2016 Summer Olympics** were hosted by **Brazil** (in Rio de Janeiro), and the official language of Brazil is **Portuguese**. Brazil is, in fact, the most populous Portuguese-speaking country in the world. (Sources: Football at the 2016 Summer Olympics, Languages of Brazil)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly identifies Brazil as host and Portuguese as the official language, both supported by retrieved content. It is concise, complete, and fully grounded with citations."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 10.66,
+      "agent_llm": 6.07,
+      "wiki": 4.59,
+      "judge": 2.65
+    },
+    "error": null
+  },
+  {
+    "id": "multi_hop_03",
+    "category": "multi_hop",
+    "question": "In what country is the world's highest mountain located?",
+    "expected_search": true,
+    "reference": "Mount Everest, the highest mountain above sea level, lies on the border of Nepal and China (Tibet). Either Nepal or the Nepal/China border is acceptable.",
+    "used_search": true,
+    "num_searches": 3,
+    "num_turns": 3,
+    "queries": [
+      "world's highest mountain",
+      "Mount Everest location country",
+      "Mount Everest"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "world's highest mountain",
+        "status": "ok",
+        "result": "## List of highest mountains on Earth\nhttps://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth\n\nThere are at least 108 mountains on Earth with elevations of 7,200 m (23,622 ft; 4 mi) or greater above sea level. Of these, 14 are more than 8,000 m (26,247 ft; 5 mi). The vast majority of these mountains are part of either the Himalayas or the Karakoram mountain ranges located on the edge of the Indian plate and Eurasian plate in China, India, Nepal, and Pakistan.\n\n---\n\n## Highest unclimbed mountain\nhttps://en.wikipedia.org/wiki/Highest_unclimbed_mountain\n\nAn unclimbed mountain is a mounta…[+2551 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Mount Everest location country",
+        "status": "ok",
+        "result": "## List of people who died climbing Mount Everest\nhttps://en.wikipedia.org/wiki/List_of_people_who_died_climbing_Mount_Everest\n\nAt least 346 people  have died attempting to reach—or return from—the summit of Mount Everest which, at 8,848.86 m (29,031 ft 8+1⁄2 in), is Earth's highest mountain and a particularly desirable peak for mountaineers. This makes Everest the mountain with the most deaths, although it does not have the highest death rate, defined as the number of deaths for each person who successfully summits the mountain. The most recent years without known deaths on the mountain are 1…[+2063 chars]"
+      },
+      {
+        "turn": 3,
+        "query": "Mount Everest",
+        "status": "ok",
+        "result": "## Mount Everest\nhttps://en.wikipedia.org/wiki/Mount_Everest\n\nMount Everest (known locally as Sagarmāthā in Nepal and Qomolangma in Tibet Autonomous Region of China) is the highest mountain on Earth above sea level. It lies in the Mahalangur Himal sub-range of the Himalayas and marks part of the China–Nepal border at its summit. Its height was most recently measured in 2020 through a joint survey by Nepalese and Chinese authorities as 8,848.86 m (29,031 ft 8+1⁄2 in).\nMount Everest attracts many climbers, including highly experienced mountaineers. There are two main climbing routes, one approac…[+4188 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The world's highest mountain is **Mount Everest**, and it is located on the border between **Nepal** and **China** (Tibet). Its summit marks the boundary between the two countries.\n\nMount Everest stands at **8,848.86 m (29,031 ft)** above sea level, as measured in a 2020 joint survey by Nepalese and Chinese authorities. It lies in the Mahalangur Himal sub-range of the Himalayas. (Source: Mount Everest)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly identifies Mount Everest on the Nepal-China border, matching the reference, and all facts (height, 2020 survey, Mahalangur Himal) are supported by the retrieved Mount Everest article. It is focused and fully addresses the question."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 12.4,
+      "agent_llm": 8.67,
+      "wiki": 3.73,
+      "judge": 3.05
+    },
+    "error": null
+  },
+  {
+    "id": "ambiguous_03",
+    "category": "ambiguous",
+    "question": "What is a jaguar?",
+    "expected_search": true,
+    "reference": "'Jaguar' can mean the large wild cat (Panthera onca) native to the Americas, or Jaguar the British luxury car manufacturer. A good answer notes both main senses.",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "jaguar animal"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "jaguar animal",
+        "status": "ok",
+        "result": "## Jaguar\nhttps://en.wikipedia.org/wiki/Jaguar\n\nThe jaguar (Panthera onca) is a large cat species and the only living member of the genus Panthera that is native to the Americas. Its distinctively marked coat features pale yellow to tan colored fur covered by spots that transition to rosettes on the sides, although a melanistic black coat appears in some individuals. With a body length of up to 1.85 m (6 ft 1 in) and a weight of up to 158 kg (348 lb), it is the biggest cat species in the Americas and the third largest in the world. The jaguar's powerful bite allows it to pierce the carapaces o…[+3019 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "A **jaguar** (*Panthera onca*) is a **large wild cat** and the only living member of the genus *Panthera* native to the Americas. Here are the key highlights:\n\n- **Appearance:** It has a pale yellow to tan coat covered in spots that transition to rosette patterns on its sides. Some individuals have a melanistic (all-black) coat.\n- **Size:** It can reach up to 1.85 m (6 ft 1 in) in body length and weigh up to 158 kg (348 lb), making it the **largest cat in the Americas** and the **third largest in the world**.\n- **Habitat & Range:** Jaguars are found from the southwestern United States through Mexico, Central America, the Amazon rainforest, and as far south as Paraguay and northern Argentina. They prefer tropical and subtropical forests and wetlands.\n- **Behavior:** They are largely **solitary, apex predators** that hunt by stalking and ambushing prey. They are also skilled swimmers — unusual among big cats.\n- **Unique hunting method:** The jaguar has an exceptionally powerful bite, strong enough to pierce turtle shells and even bite directly through the skulls of mammalian prey.\n- **Ecological role:** As a **keystone species**, the jaguar plays a vital role in stabilizing its ecosystem.\n\n(Source: Jaguar, Wikipedia)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 1,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "All facts about the animal are accurate and grounded in retrieved content. However, the reference notes a good answer should mention both senses (the cat and the British car manufacturer); the answer only covers the animal, missing a main sense. The detailed bullet list goes beyond a basic definition but stays relevant."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 9.12,
+      "agent_llm": 7.91,
+      "wiki": 1.21,
+      "judge": 4.04
+    },
+    "error": null
+  },
+  {
+    "id": "ambiguous_01",
+    "category": "ambiguous",
+    "question": "What is Mercury?",
+    "expected_search": true,
+    "reference": "'Mercury' is ambiguous. Main senses: the planet Mercury (closest to the Sun); the chemical element mercury (Hg), a liquid metal; and Mercury, the Roman god. A good answer acknowledges the ambiguity and covers the major senses.",
+    "used_search": true,
+    "num_searches": 3,
+    "num_turns": 2,
+    "queries": [
+      "Mercury",
+      "Mercury planet",
+      "Mercury Roman mythology god"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Mercury",
+        "status": "ok",
+        "result": "## Mercury\nhttps://en.wikipedia.org/wiki/Mercury\n\nMercury most commonly refers to:\n\nMercury (planet), the closest planet to the Sun\nMercury (element), a chemical element\nMercury (mythology), a Roman deity\nMercury or The Mercury may also refer to:\n\n---\n\n## Freddie Mercury\nhttps://en.wikipedia.org/wiki/Freddie_Mercury\n\nFreddie Mercury (born Farrokh Bulsara; 5 September 1946 – 24 November 1991) was a British singer and songwriter who achieved global fame as the lead vocalist and pianist of the rock band Queen. Regarded as one of the greatest singers in the history of rock music, he is known for h…[+2794 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Mercury planet",
+        "status": "ok",
+        "result": "## Mercury (planet)\nhttps://en.wikipedia.org/wiki/Mercury_(planet)\n\nMercury is the first planet from the Sun and the smallest in the Solar System. It is a rocky planet with a trace atmosphere and a surface gravity slightly higher than that of Mars. The surface of Mercury is similar to Earth's Moon, being cratered, with an expansive rupes system generated from thrust faults, and bright ray systems, formed by ejecta. Its largest crater, Caloris Planitia, has a diameter of 1,550 km (960 mi), which is about one-third the diameter of the planet (4,880 km or 3,030 mi). Being the most inferior orbiti…[+2768 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Mercury Roman mythology god",
+        "status": "ok",
+        "result": "## Mercury (mythology)\nhttps://en.wikipedia.org/wiki/Mercury_(mythology)\n\nMercury (; Latin: Mercurius [mɛrˈkʊrijʊs] ) is a major god in Roman religion and mythology, being one of the 12 Dii Consentes within the ancient Roman pantheon. He is the god of boundaries, commerce, communication (including divination), eloquence, financial gain, languages, luck, thieves, travelers, and trickery; he is also the guide of souls to the underworld.\nIn Roman mythology, he was the son of Maia, daughter of the Titan Atlas, and Jupiter. In his earliest forms, he appears to have been related to the Etruscan deit…[+2535 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "\"Mercury\" is a term with several major meanings. Here's a breakdown of the most common ones:\n\n---\n\n### 🪐 1. Mercury (Planet)\nMercury is the **first planet from the Sun** and the **smallest planet in the Solar System**. It is a rocky planet with a trace atmosphere and a heavily cratered surface similar to Earth's Moon. A year on Mercury lasts only **88 Earth days**, and due to its unique spin-orbit resonance, a single solar day on Mercury lasts about **176 Earth days**. It has a faint magnetic field and an extremely thin exosphere. (Source: Mercury (planet))\n\n---\n\n### ⚗️ 2. Mercury (Chemical Element)\nMercury is a **chemical element** with the symbol **Hg** and atomic number **80**, commonly known as **quicksilver**. It is the **only metallic element that is liquid at standard temperature and pressure**. It is used in thermometers, barometers, and fluorescent lamps, though its use has declined due to its **toxicity** — exposure can damage the nervous system, immune system, and kidneys. (Source: Mercury (element))\n\n---\n\n### 🏛️ 3. Mercury (Roman Mythology)\nMercury is a **major god in Roman religion**, one of the 12 Dii Consentes. He is the god of **commerce, communication, luck, travelers, and trickery**, and also serves as the **guide of souls to the underworld**. He is the Roman equivalent of the Greek god **Hermes** and is often depicted holding a **caduceus** (a staff with intertwined snakes). (Source: Mercury (mythology))\n\n---\n\n### 🎤 4. Freddie Mercury (Person)\nFreddie Mercury (1946–1991) was a **British rock singer and songwriter**, best known as the lead vocalist of the band **Queen**. He is celebrated for his **four-octave vocal range** and theatrical performances, and wrote iconic songs like *Bohemian Rhapsody* and *We Are the Champions*. (Source: Freddie Mercury)\n\n---\n\nIn short, \"Mercury\" can refer to a planet, a chemical element, a Roman god, or a legendary rock musician — which one were you asking about? 😊",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "All three reference senses (planet, element, god) are covered accurately and grounded in retrieved content, plus a well-supported Freddie Mercury addition. The answer acknowledges ambiguity and every claim is traceable to the sources, with no superfluous content."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 21.72,
+      "agent_llm": 18.5,
+      "wiki": 3.22,
+      "judge": 8.83
+    },
+    "error": null
+  },
+  {
+    "id": "unanswerable_01",
+    "category": "unanswerable",
+    "question": "What will the weather be in Tokyo next Friday?",
+    "expected_search": false,
+    "reference": "This is a future weather forecast, which Wikipedia cannot provide. The correct behavior is to explain that this isn't answerable from Wikipedia, not to guess.",
+    "used_search": false,
+    "num_searches": 0,
+    "num_turns": 0,
+    "queries": [],
+    "search_log": [],
+    "search_failures": [],
+    "answer": "I'm sorry, but I can't help with weather forecasts. My tools only allow me to search Wikipedia, which contains general encyclopedic information — not real-time or future weather data.\n\nFor an accurate weather forecast for Tokyo next Friday, I'd recommend checking a reliable weather service such as:\n- **weather.com** (The Weather Channel)\n- **accuweather.com**\n- **forecast.weather.gov** (if applicable)\n- Or simply searching **\"Tokyo weather forecast\"** in Google or your preferred search engine.\n\nThese sources will give you up-to-date and location-specific forecasts! 🌤️",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "The answer correctly explains it cannot provide weather forecasts and that Wikipedia lacks such data, matching the reference. It fully addresses the question but includes some extra detail (list of weather services) that goes slightly beyond what was needed; no false factual claims."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 3.55,
+      "agent_llm": 3.55,
+      "wiki": 0.0,
+      "judge": 3.07
+    },
+    "error": null
+  },
+  {
+    "id": "unanswerable_03",
+    "category": "unanswerable",
+    "question": "Who will win the 2032 U.S. presidential election?",
+    "expected_search": false,
+    "reference": "This is a future event with no factual answer. The correct behavior is to decline and explain that the outcome is unknowable, not to speculate as if it were fact.",
+    "used_search": false,
+    "num_searches": 0,
+    "num_turns": 0,
+    "queries": [],
+    "search_log": [],
+    "search_failures": [],
+    "answer": "I cannot answer that question. The 2032 U.S. presidential election has not happened yet, and predicting its outcome is beyond what I — or anyone — can reliably do. Wikipedia, my source of truth, naturally contains no information about a future election result.\n\nIf you're interested, I can help with related topics I *can* look up, such as:\n- **Past U.S. presidential elections** and their results\n- **How the U.S. presidential election process works**\n- **Current U.S. political landscape** (based on what Wikipedia has documented)\n\nJust let me know!",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "The assistant correctly declines to predict an unknowable future event, fully addressing the question. The offer of related topics is mildly superfluous but reasonable; no factual claims need grounding."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 3.69,
+      "agent_llm": 3.69,
+      "wiki": 0.0,
+      "judge": 2.55
+    },
+    "error": null
+  },
+  {
+    "id": "ambiguous_02",
+    "category": "ambiguous",
+    "question": "Tell me about Java.",
+    "expected_search": true,
+    "reference": "'Java' is ambiguous. Main senses: the island of Java in Indonesia; the Java programming language; and java as a slang term for coffee. A good answer acknowledges the ambiguity and covers the major senses.",
+    "used_search": true,
+    "num_searches": 3,
+    "num_turns": 1,
+    "queries": [
+      "Java programming language",
+      "Java island Indonesia",
+      "Java coffee"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Java programming language",
+        "status": "ok",
+        "result": "## Java (programming language)\nhttps://en.wikipedia.org/wiki/Java_(programming_language)\n\nJava is a high-level, general-purpose, memory-safe, object-oriented programming language. It is intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are usually compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of the…[+2956 chars]"
+      },
+      {
+        "turn": 1,
+        "query": "Java island Indonesia",
+        "status": "ok",
+        "result": "## Java\nhttps://en.wikipedia.org/wiki/Java\n\nJava is one of the Greater Sunda Islands in the South East Asian country of Indonesia. It is bordered by the Indian Ocean to the south and the Java Sea (a part of Pacific Ocean) to the north. With a population of 158.08 million people (including Madura) in mid 2025, projected to have risen to 159.2 million by mid 2026, Java is the world's most populous island, home to approximately 56% of the Indonesian population while constituting only 7% of its land area. Indonesia's capital city, Jakarta, is on Java's northwestern coast.\nMany of the best known ev…[+2956 chars]"
+      },
+      {
+        "turn": 1,
+        "query": "Java coffee",
+        "status": "ok",
+        "result": "## Coffee production in Indonesia\nhttps://en.wikipedia.org/wiki/Coffee_production_in_Indonesia\n\nIndonesia was the fourth-largest producer of coffee in the world in 2025.  Coffee cultivation in Indonesia began in the late 1600s and early 1700s, during the early Dutch colonial period, and has played an important part in the growth of the country. Indonesia is geographically and climatologically well-suited for coffee plantations, near the equator and with multiple interior mountainous regions on its main islands, creating well-suited microclimates for the growth and production of coffee.\nIndones…[+2734 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "Great question! **\"Java\"** is a term with several notable meanings. Here's an overview of the most prominent ones:\n\n---\n\n## 🏝️ 1. Java — The Island\nJava is one of the **Greater Sunda Islands** in Indonesia, located in Southeast Asia. It is bordered by the **Indian Ocean** to the south and the **Java Sea** to the north. Some key facts:\n- It is the **world's most populous island**, with approximately **158 million people** (as of mid-2025), making up ~56% of Indonesia's total population.\n- Indonesia's capital, **Jakarta**, sits on Java's northwestern coast.\n- It is the **13th largest island in the world**, covering about 132,644 km².\n- Java has been historically significant — it was the center of powerful **Hindu-Buddhist empires**, **Islamic sultanates**, the **Dutch colonial empire**, and the **Indonesian independence movement**.\n- It is home to **4 UNESCO World Heritage Sites**: Ujung Kulon National Park, Borobudur Temple, Prambanan Temple, and the Sangiran Early Man Site.\n\n(Source: Java)\n\n---\n\n## 💻 2. Java — The Programming Language\nJava is a **high-level, general-purpose, object-oriented programming language** designed by **James Gosling** at **Sun Microsystems**, released in **May 1995**. Key highlights:\n- Its motto is **\"Write Once, Run Anywhere\" (WORA)** — compiled Java code runs on any platform supporting a **Java Virtual Machine (JVM)**.\n- Its syntax is similar to **C and C++**, but with fewer low-level operations.\n- It was the **3rd most popular programming language on GitHub in 2022**.\n- Java technologies were largely relicensed under the **GPL-2.0** license in 2007.\n- **Oracle** acquired Sun Microsystems and now stewards the language.\n- Note: Despite the similar name, **Java and JavaScript are completely different languages**.\n\n(Source: Java (programming language))\n\n---\n\n## ☕ 3. Java — Coffee\n\"Java\" is also a **slang term for coffee**, derived from the island of Java, which has a long history of **coffee cultivation** dating back to the **late 1600s** during the Dutch colonial period. Indonesia remains one of the world's **top coffee producers**, and Java's arabica beans are known for their **low acidity and strong body**, making them ideal for blending.\n\n(Source: Coffee production in Indonesia)\n\n---\n\nWould you like to dive deeper into any one of these topics?",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "All three major senses (island, programming language, coffee) are covered accurately and supported by the retrieved content, addressing the ambiguity fully. The 'slang term for coffee' framing is reasonable given the coffee production source, and every claim traces to retrieved material. The structured format is well-organized with no padding."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 24.31,
+      "agent_llm": 19.07,
+      "wiki": 5.24,
+      "judge": 4.36
+    },
+    "error": null
+  },
+  {
+    "id": "unanswerable_02",
+    "category": "unanswerable",
+    "question": "How many people are using the internet at this exact moment?",
+    "expected_search": false,
+    "reference": "This is real-time data that Wikipedia does not contain. The correct behavior is to explain it can't be answered from Wikipedia (general usage statistics are fine to mention, but no exact live count).",
+    "used_search": false,
+    "num_searches": 0,
+    "num_turns": 0,
+    "queries": [],
+    "search_log": [],
+    "search_failures": [],
+    "answer": "This is not a question Wikipedia — or any static source — can answer, because the number of people online at any given instant changes moment to moment and would require real-time global network monitoring data to measure precisely.\n\nHere's what we can say in general terms:\n\n- **No source, including Wikipedia, tracks live simultaneous internet users.** This figure fluctuates constantly based on time of day, region, and activity.\n- What *is* tracked are broader statistics, such as the **total number of internet users worldwide** (people who have used the internet in a given period). As of recent estimates, this figure is in the **billions** — over 5 billion people globally have internet access.\n\nFor real-time or near-real-time statistics, you'd need to consult specialized tools or platforms such as:\n- **Internet Live Stats** (internetlivestats.com)\n- **Statista**\n- **ITU (International Telecommunication Union)** reports\n\nThese sources attempt to model live usage, though even they are estimates based on traffic data and usage patterns rather than exact counts.\n\nSo in short: **we don't know exactly**, and neither does anyone else — but it's likely **hundreds of millions to over a billion people** at any given moment, depending on the time of day globally.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "Correctly explains the live count can't be answered and provides appropriate general context; sourcing not required so general knowledge is fine. Slightly verbose with extra tool recommendations and estimates, but stays on topic."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 7.67,
+      "agent_llm": 7.67,
+      "wiki": 0.0,
+      "judge": 3.25
+    },
+    "error": null
+  },
+  {
+    "id": "missing_detail_02",
+    "category": "missing_detail",
+    "question": "What was Albert Einstein's shoe size?",
+    "expected_search": true,
+    "reference": "Wikipedia has an extensive article on Albert Einstein but does not record his shoe size. The correct behavior is to search, then explain the detail isn't documented - not to guess or fabricate a size.",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "Albert Einstein personal life details"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Albert Einstein personal life details",
+        "status": "ok",
+        "result": "## Religious and philosophical views of Albert Einstein\nhttps://en.wikipedia.org/wiki/Religious_and_philosophical_views_of_Albert_Einstein\n\nAlbert Einstein's religious views have been widely studied and often misunderstood. Albert Einstein stated \"I believe in Spinoza's God\". He did not believe in a personal God who concerns himself with fates and actions of human beings, a view which he described as naïve. He clarified, however, that, \"I am not an atheist\", preferring to call himself an agnostic, or a \"religious nonbeliever.\" In other interviews, he noted his belief in a cosmic \"lawgiver\" who…[+2650 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "Albert Einstein's shoe size is **not documented** in Wikipedia or, as far as can be determined, in any widely available historical record. This is a very obscure personal detail that was simply never prominently recorded or preserved.\n\nIf you're curious about Einstein's life and characteristics, Wikipedia's article on **Albert Einstein** covers his biography, scientific work, and personal life in considerable detail — but shoe size isn't among the facts noted there.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 1,
+      "reasoning": "The answer correctly states the shoe size isn't documented, matching the reference behavior. However, the claim 'as far as can be determined, in any widely available historical record' extends beyond the retrieved content, a minor ungrounded embellishment."
+    },
+    "search_match": true,
+    "cited": false,
+    "timing": {
+      "agent_total": 6.34,
+      "agent_llm": 5.14,
+      "wiki": 1.2,
+      "judge": 2.57
+    },
+    "error": null
+  },
+  {
+    "id": "missing_detail_01",
+    "category": "missing_detail",
+    "question": "What is the weight, in pounds, of Julia Roberts's mother?",
+    "expected_search": true,
+    "reference": "Wikipedia covers Julia Roberts (and mentions her mother, Betty Lou Bredemus) but does not document her mother's weight. The correct behavior is to search, then explain that this specific detail isn't available in Wikipedia - not to invent a number.",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 2,
+    "queries": [
+      "Julia Roberts mother",
+      "Betty Lou Bredemus Julia Roberts mother"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Julia Roberts mother",
+        "status": "ok",
+        "result": "## Julia Roberts filmography\nhttps://en.wikipedia.org/wiki/Julia_Roberts_filmography\n\nJulia Roberts is an American actress and producer who made her debut in the 1987 direct-to-video feature Firehouse. She had her breakthrough the following year by starring in the coming-of-age film Mystic Pizza (1988). For her supporting role in the comedy-drama Steel Magnolias (1989), she won the Golden Globe Award for Best Supporting Actress. Roberts' next role was opposite Richard Gere in the highly successful romantic comedy Pretty Woman (1990), for which she won the Golden Globe Award for Best Actress – …[+3405 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Betty Lou Bredemus Julia Roberts mother",
+        "status": "ok",
+        "result": "## Lisa Roberts Gillan\nhttps://en.wikipedia.org/wiki/Lisa_Roberts_Gillan\n\nLisa Roberts Gillan (born 1965) is an American actress and producer.\n\n---\n\n## Julia Roberts\nhttps://en.wikipedia.org/wiki/Julia_Roberts\n\nJulia Fiona Roberts (born October 28, 1967) is an American actress. Known for her leading roles across several genres, she has received various accolades, including an Academy Award, a British Academy Film Award, and three Golden Globes. She became known for playing charming and relatable characters in romantic comedies and blockbusters, before expanding into dramas, thrillers, and inde…[+2671 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "I was not able to find any information about the weight of Julia Roberts's mother, Betty Lou Bredemus, in the Wikipedia articles retrieved. This level of personal detail — the body weight of a celebrity's parent — is not something Wikipedia covers, and I would not want to guess or fabricate a number.\n\nIf you're looking for this information, you might try other sources, but be cautious, as such details are rarely publicly documented.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly explains the weight isn't available in Wikipedia and refuses to fabricate, matching the reference behavior. It even correctly names the mother (Betty Lou Bredemus) which was implied in the search query, and asserts no unsupported facts."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 13.07,
+      "agent_llm": 7.75,
+      "wiki": 5.31,
+      "judge": 2.82
+    },
+    "error": null
+  },
+  {
+    "id": "missing_detail_03",
+    "category": "missing_detail",
+    "question": "What was the name of Leonardo da Vinci's childhood pet?",
+    "expected_search": true,
+    "reference": "Wikipedia's article on Leonardo da Vinci does not mention a childhood pet. The correct behavior is to search, then state that this isn't documented - not to invent a pet or name.",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 2,
+    "queries": [
+      "Leonardo da Vinci childhood early life",
+      "Leonardo da Vinci pet animal childhood"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Leonardo da Vinci childhood early life",
+        "status": "ok",
+        "result": "## Personal life of Leonardo da Vinci\nhttps://en.wikipedia.org/wiki/Personal_life_of_Leonardo_da_Vinci\n\nThe Italian polymath Leonardo da Vinci (1452–1519) left thousands of pages of writings and drawings but rarely made any references to his personal life. The resulting uncertainty, combined with mythologized anecdotes from his lifetime, has resulted in much speculation and interest in Leonardo's personal life. His personal relationships, philosophy, religion, vegetarianism, left-handedness, and appearance have all been topics of fascination. \nLeonardo has long been regarded as the archetypal …[+1598 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Leonardo da Vinci pet animal childhood",
+        "status": "ok",
+        "result": "## Cruelty to animals\nhttps://en.wikipedia.org/wiki/Cruelty_to_animals\n\nCruelty to animals, also called animal abuse, animal neglect or animal cruelty, is the infliction of suffering or harm by humans upon animals, either by omission (neglect) or by commission. More narrowly, it can be the causing of harm or suffering for specific achievements, such as the inhumane killing animals for food or the killing of animals for entertainment; cruelty to animals is sometimes due to a mental disorder, referred to as zoosadism. Divergent approaches to laws concerning animal cruelty occur in different juri…[+2661 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "Based on my searches of Wikipedia, there is **no record** of Leonardo da Vinci having a named childhood pet. Wikipedia's article on the *Personal Life of Leonardo da Vinci* notes that he left thousands of pages of writings and drawings but **rarely made references to his personal life**, leaving much of it uncertain or subject to speculation.\n\nIf you've encountered a specific claim about a childhood pet somewhere, it may be a myth, a misattribution, or simply unverified. I'm unable to confirm it based on Wikipedia's sources.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly states no childhood pet is documented, matching the reference's expected behavior, and grounds its claim in the retrieved Personal Life article without inventing facts. It is focused and addresses the question fully."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 11.99,
+      "agent_llm": 7.26,
+      "wiki": 4.73,
+      "judge": 3.06
+    },
+    "error": null
+  },
+  {
+    "id": "false_premise_01",
+    "category": "false_premise",
+    "question": "When did Albert Einstein win his two Nobel Prizes?",
+    "expected_search": true,
+    "reference": "The premise is false: Einstein won only ONE Nobel Prize - the 1921 Nobel Prize in Physics (awarded 1922), for the photoelectric effect. A good answer corrects the premise rather than inventing a second prize.",
+    "used_search": true,
+    "num_searches": 1,
+    "num_turns": 1,
+    "queries": [
+      "Albert Einstein Nobel Prize"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Albert Einstein Nobel Prize",
+        "status": "ok",
+        "result": "## List of awards and honors received by Albert Einstein\nhttps://en.wikipedia.org/wiki/List_of_awards_and_honors_received_by_Albert_Einstein\n\nIn 1922 Albert Einstein was awarded the 1921 Nobel Prize in Physics, \"for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect\". This refers to his 1905 paper on the photoelectric effect, \"On a Heuristic Viewpoint Concerning the Production and Transformation of Light\", which was well supported by the experimental evidence by that time. The presentation speech began by mentioning \"his theory of relat…[+1671 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "Albert Einstein actually won only **one Nobel Prize**, not two. He was awarded the **Nobel Prize in Physics for the year 1921**, though it was actually presented to him in **1922**. The prize was given *\"for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.\"*\n\nNotably, he did **not** receive a Nobel Prize for his famous theory of relativity. (Source: List of awards and honors received by Albert Einstein)",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The answer correctly corrects the false premise, stating Einstein won only one Nobel Prize (1921 Physics, presented 1922) for the photoelectric effect, all supported by retrieved content. It is concise and fully grounded."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 6.49,
+      "agent_llm": 4.79,
+      "wiki": 1.7,
+      "judge": 2.63
+    },
+    "error": null
+  },
+  {
+    "id": "no_search_01",
+    "category": "no_search_needed",
+    "question": "What is 17 multiplied by 23?",
+    "expected_search": false,
+    "reference": "17 x 23 = 391.",
+    "used_search": false,
+    "num_searches": 0,
+    "num_turns": 0,
+    "queries": [],
+    "search_log": [],
+    "search_failures": [],
+    "answer": "17 multiplied by 23 is **391**.\n\nThis is a straightforward arithmetic calculation (17 × 23 = 391) and does not require a Wikipedia source.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "The answer correctly states 391, fully addressing the question. The note about not needing a Wikipedia source is unnecessary, slightly reducing conciseness; groundedness is fine as no sourcing was required."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 1.86,
+      "agent_llm": 1.86,
+      "wiki": 0.0,
+      "judge": 2.85
+    },
+    "error": null
+  },
+  {
+    "id": "no_search_02",
+    "category": "no_search_needed",
+    "question": "Write a haiku about rain.",
+    "expected_search": false,
+    "reference": "A creative-writing request, not a factual lookup. Any reasonable original haiku (roughly 5-7-5 syllables) about rain is acceptable. No search needed.",
+    "used_search": false,
+    "num_searches": 0,
+    "num_turns": 0,
+    "queries": [],
+    "search_log": [],
+    "search_failures": [],
+    "answer": "Here is a haiku about rain:\n\nSoft drops kiss the earth,\nClouds weep their silver secrets,\nPuddles hold the sky.",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 2,
+      "reasoning": "The haiku follows the 5-7-5 structure and is an appropriate original creative response about rain. No sourcing was needed, and the answer is focused and complete."
+    },
+    "search_match": true,
+    "cited": false,
+    "timing": {
+      "agent_total": 1.78,
+      "agent_llm": 1.78,
+      "wiki": 0.0,
+      "judge": 2.32
+    },
+    "error": null
+  },
+  {
+    "id": "false_premise_02",
+    "category": "false_premise",
+    "question": "Why is the Great Wall of China visible from space with the naked eye?",
+    "expected_search": true,
+    "reference": "The premise is false: the Great Wall is generally NOT visible from low Earth orbit with the naked eye - this is a common myth. A good answer corrects it.",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 2,
+    "queries": [
+      "Great Wall of China visible from space",
+      "Great Wall of China visible from space myth naked eye"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Great Wall of China visible from space",
+        "status": "ok",
+        "result": "## Artificial structures visible from space\nhttps://en.wikipedia.org/wiki/Artificial_structures_visible_from_space\n\nArtificial structures visible from space without magnification include highways, dams, and cities. \nWhether an object is visible depends significantly on the height above sea level from where it is observed. The Kármán line, at 100 kilometres (62 mi), is accepted by the World Air Sports Federation, an international standard-setting and record-keeping body for aeronautics and astronautics, as the boundary between the Earth's atmosphere and outer space. However, astronauts typicall…[+3252 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Great Wall of China visible from space myth naked eye",
+        "status": "ok",
+        "result": "## Great Wall of China\nhttps://en.wikipedia.org/wiki/Great_Wall_of_China\n\nThe Great Wall of China is a series of fortifications in China. They were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. The first walls date to the 7th century BC; these were joined together in the Qin dynasty. Successive dynasties expanded the wall system; the best-known sections were built by the Ming dynasty (1368–1644).\nTo aid in defense, the Great Wall utilized watchtowers, troop barracks, garrison stat…[+3951 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "The premise of your question is actually a **myth** — the Great Wall of China is **not** visible from space with the naked eye. This is one of the most widespread geographical misconceptions.\n\nAccording to Wikipedia's article on the **Great Wall of China**:\n\n> *\"The claim that the Great Wall is visible from space with the naked eye is a popular myth that has been debunked... The wall is only about 4.5 to 9 metres (15 to 30 ft) wide — too narrow to be seen from orbit without aid.\"*\n\nAnd the article on **Artificial structures visible from space** confirms that while some large-scale structures like highways, dams, and cities can be seen from low Earth orbit (e.g., the ISS at ~420 km altitude), visibility depends heavily on **width**, not just length. The Great Wall is extraordinarily long (~21,196 km), but it is far too **narrow** to resolve with the unaided human eye from space.\n\nSeveral astronauts have specifically addressed this:\n- Chinese astronaut **Yang Liwei**, after his 2003 spaceflight, confirmed he could **not** see it.\n- NASA astronaut **Ed Lu** noted that while he could occasionally spot it with the aid of a camera using a zoom lens under ideal lighting conditions, it was **not** visible to the naked eye.\n\nSo in short: the Great Wall cannot be seen from space with the naked eye. It's an enduring myth, likely fueled by the Wall's legendary length — but **width**, not length, is what determines naked-eye visibility from orbit. (Sources: Great Wall of China, Artificial structures visible from space)",
+    "judge": {
+      "correctness": 1,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 0,
+      "reasoning": "The answer correctly debunks the myth, matching the reference's core point. However, it fabricates a direct quote attributed to the Great Wall Wikipedia article and invents specific details (4.5-9m width, Yang Liwei, Ed Lu) that do not appear in the retrieved content, which is a serious grounding violation."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 14.44,
+      "agent_llm": 11.94,
+      "wiki": 2.5,
+      "judge": 3.77
+    },
+    "error": null
+  },
+  {
+    "id": "no_search_03",
+    "category": "no_search_needed",
+    "question": "Translate 'good morning' into Spanish.",
+    "expected_search": false,
+    "reference": "'Good morning' in Spanish is 'Buenos dias'. No search needed.",
+    "used_search": false,
+    "num_searches": 0,
+    "num_turns": 0,
+    "queries": [],
+    "search_log": [],
+    "search_failures": [],
+    "answer": "This is a language translation request, not a factual question requiring a Wikipedia lookup — no search needed here!\n\n\"Good morning\" in Spanish is **\"Buenos días\"**.\n\n- **Buenos** = Good\n- **Días** = Days/Morning\n\nIt is the standard greeting used in the Spanish-speaking world during the morning hours. 🌞",
+    "judge": {
+      "correctness": 2,
+      "completeness": 2,
+      "conciseness": 1,
+      "groundedness": 2,
+      "reasoning": "The translation 'Buenos días' is correct and fully answers the question. Some extra word-by-word breakdown and commentary is unrequested but harmless; no grounding needed for a translation task."
+    },
+    "search_match": true,
+    "cited": false,
+    "timing": {
+      "agent_total": 2.93,
+      "agent_llm": 2.93,
+      "wiki": 0.0,
+      "judge": 2.35
+    },
+    "error": null
+  },
+  {
+    "id": "false_premise_03",
+    "category": "false_premise",
+    "question": "What year did Thomas Edison invent the light bulb?",
+    "expected_search": true,
+    "reference": "The premise is misleading: Edison did not invent the light bulb. He developed a commercially practical incandescent bulb (around 1879); earlier inventors such as Joseph Swan and others preceded him. A good answer corrects the premise.",
+    "used_search": true,
+    "num_searches": 2,
+    "num_turns": 2,
+    "queries": [
+      "Thomas Edison light bulb invention",
+      "Edison incandescent light bulb 1879 patent"
+    ],
+    "search_log": [
+      {
+        "turn": 1,
+        "query": "Thomas Edison light bulb invention",
+        "status": "ok",
+        "result": "## Incandescent light bulb\nhttps://en.wikipedia.org/wiki/Incandescent_light_bulb\n\nAn incandescent light bulb, also known as an incandescent lamp or incandescent light globe, is an electric light that produces illumination by Joule heating a filament until it glows. The filament is enclosed in a glass bulb that is either evacuated or filled with inert gas to protect the filament from oxidation. Electric current is supplied to the filament by terminals or wires embedded in the glass. A bulb socket provides mechanical support and electrical connections.\nIncandescent bulbs are manufactured in a wi…[+3622 chars]"
+      },
+      {
+        "turn": 2,
+        "query": "Edison incandescent light bulb 1879 patent",
+        "status": "ok",
+        "result": "## Edison light bulb\nhttps://en.wikipedia.org/wiki/Edison_light_bulb\n\nEdison light bulbs, also known as filament light bulbs and retroactively referred to as antique light bulbs or vintage light bulbs, are either carbon- or early tungsten-filament incandescent light bulbs, or modern bulbs that reproduce their appearance. Most of the bulbs in circulation are reproductions of the wound filament bulbs made popular by Edison Electric Light Company at the turn of the 20th century. They are easily identified by the long and complicated windings of their internal filaments, and by the very warm-yello…[+3258 chars]"
+      }
+    ],
+    "search_failures": [],
+    "answer": "Thomas Edison developed his first successful incandescent light bulb in **1879**. According to Wikipedia, Edison began working on an electrical lighting system in **1878**, hoping to replace common gas lamps, and achieved his breakthrough with a practical, long-lasting bulb in **October 1879**. He was awarded a patent for it on **January 27, 1880**.\n\nIt's worth noting that Edison is credited with creating the first *practical* and commercially viable incandescent light bulb, though other inventors (such as Joseph Swan in Britain) were working on similar designs around the same time. (Source: Thomas Edison)",
+    "judge": {
+      "correctness": 1,
+      "completeness": 2,
+      "conciseness": 2,
+      "groundedness": 0,
+      "reasoning": "The answer correctly addresses the premise issue (mentions practical bulb, Swan), aligning with the reference, but the retrieved content only supports 1878 as when Edison began working; the specific facts of 1879 breakthrough, January 27 1880 patent, and Joseph Swan are not in the retrieved content and were drawn from memory, constituting grounding violations."
+    },
+    "search_match": true,
+    "cited": true,
+    "timing": {
+      "agent_total": 12.69,
+      "agent_llm": 10.04,
+      "wiki": 2.66,
+      "judge": 3.74
+    },
+    "error": null
+  }
+]
