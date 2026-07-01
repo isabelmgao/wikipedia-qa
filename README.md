@@ -5,8 +5,9 @@ to search, calls a `search_wikipedia` tool as many times as it needs, and ground
 what it retrieves — citing the articles it used. A companion **eval harness** grades the system
 across a labeled dataset so quality changes can be measured, not guessed.
 
-Everything runs in `notebook.ipynb`. There are two ways to use it:
-**(A) ask a question**, or **(B) evaluate the system**.
+Everything runs in `deliverables/notebook.ipynb`. There are two ways to use it:
+**(A) ask a question**, or **(B) evaluate the system**. See **Repository layout** at the bottom
+for where everything lives.
 
 ## Setup
 
@@ -28,7 +29,9 @@ Everything runs in `notebook.ipynb`. There are two ways to use it:
    Get a key at <https://console.anthropic.com/settings/keys>. A few dollars of credit is plenty;
    the full eval run below costs roughly **$1**, a single question a fraction of a cent.
 
-3. Open `notebook.ipynb` (in VS Code, or run `jupyter lab`) and select the **`.venv`** kernel.
+3. Open **`deliverables/notebook.ipynb`** (in VS Code, or run `jupyter lab`) and select the
+   **`.venv`** kernel. (Run `pip install` and `cp .env.example .env` from the repo root; the
+   notebook finds the root `.env` automatically.)
 
 ---
 
@@ -57,13 +60,14 @@ print(answer_question("What is the tallest mountain in Africa?")["answer"])
 
 ## (B) Evaluate the system
 
-The eval harness (section 5) runs the agent over a labeled dataset (`eval_data.py`), grades each
-answer with a **separate, stronger judge model (Opus 4.8)**, and reports a scorecard.
+The eval harness (section 5) runs the agent over a labeled dataset (`deliverables/eval_data.py`),
+grades each answer with a **separate, stronger judge model (Opus 4.8)**, and reports a scorecard.
 
 - **Quick smoke test** — run the **`run-sample`** cell (3 examples) to confirm everything is wired
   up. Cheap.
 - **Full run** — run the **`run-full`** cell (all 23 examples). It prints a scorecard and writes
-  timestamped outputs to `eval_results/`:
+  timestamped outputs to a local `eval_results/` folder next to the notebook (prior runs are kept
+  under `supplemental/eval_results/`):
   - `scorecard_{ts}.md` — quality + behavior metrics by category
   - `eval_results_{ts}.csv` — per-example scores and the queries the agent searched
   - `trace_{ts}.json` — full per-example traces
@@ -72,18 +76,17 @@ answer with a **separate, stronger judge model (Opus 4.8)**, and reports a score
 **Metrics:** four quality scores on a 0/1/2 rubric (correctness, completeness, conciseness,
 groundedness), a binary **hallucination** flag, and behavioral checks (searched when expected,
 cited a source, and `grounded_chain` — did multi-hop questions look up the intermediate fact
-rather than assume it). See `DESIGN.md` for the rationale and `CHANGELOG.md` for what was tuned
-and why.
+rather than assume it). See `deliverables/writeup_final.md` for the full design rationale, and
+`supplemental/DESIGN.md` / `supplemental/CHANGELOG.md` for the finer detail.
 
 ---
 
-## What's in here
+## Repository layout
 
-| File | Purpose |
+| Path | Purpose |
 |---|---|
-| `notebook.ipynb` | The system (retrieval → system prompt → agent loop) + the eval harness. |
-| `eval_data.py` | The evaluation dataset (questions, reference answers, labels). |
-| `DESIGN.md` | Design rationale: question categories, metrics, grading method. |
-| `CHANGELOG.md` | What was improved and why — the hill-climbing log. |
-| `IMPROVEMENTS.md` | Backlog of changes not yet shipped. |
-| `eval_results/` | Saved scorecards, per-example metrics, and traces from prior runs. |
+| `deliverables/notebook.ipynb` | The system (retrieval → system prompt → agent loop) + the eval harness. |
+| `deliverables/eval_data.py` | The evaluation dataset (questions, reference answers, labels). |
+| `deliverables/writeup_final.md` | The design-rationale writeup (also the video outline). |
+| `README.md`, `requirements.txt`, `.env.example` | Setup, dependencies, and API-key template (repo root). |
+| `supplemental/` | Supporting docs (`DESIGN.md`, `CHANGELOG.md`, `IMPROVEMENTS.md`, and the earlier `WRITEUP.md` draft) plus every past eval run under `eval_results/`. |

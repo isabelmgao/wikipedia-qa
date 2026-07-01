@@ -34,7 +34,9 @@
       "Bash(cd /Users/izgao/anthropic *)",
       "Bash(.venv/bin/pip freeze *)",
       "Bash(brew --version)",
-      "Bash(.venv/bin/python -c ' *)"
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(../.venv/bin/python -c \"import eval_data; print\\('OK -', len\\(eval_data.EVAL_EXAMPLES\\), 'examples'\\)\")",
+      "Bash(../.venv/bin/python -c ' *)"
     ]
   }
 }
